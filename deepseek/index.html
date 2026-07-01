@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glagoljaško pjevanje – karta</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+#map { width: 100%; height: 100%; }
+
+.filter-panel {
+  position: absolute; top: 10px; right: 10px; z-index: 1000;
+  background: rgba(255,255,255,0.95); border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2); width: 270px;
+  max-height: calc(100vh - 20px); display: flex; flex-direction: column;
+}
+.filter-header {
+  padding: 12px 15px; border-bottom: 1px solid #e0e0e0;
+  font-weight: 700; font-size: 15px; color: #333;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.filter-body { padding: 10px 15px; overflow-y: auto; flex: 1; }
+.filter-section { margin-bottom: 12px; }
+.filter-section label { display: block; font-size: 12px; font-weight: 600; color: #666; margin-bottom: 4px; text-transform: uppercase; }
+.filter-section select, .filter-section input {
+  width: 100%; padding: 6px 8px; border: 1px solid #ddd; border-radius: 4px;
+  font-size: 13px; background: #fff;
+}
+.filter-section select[multiple] { height: 140px; }
+.filter-count { font-size: 11px; color: #999; margin-top: 2px; }
+.filter-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.filter-tag {
+  background: #e8f0fe; color: #1a73e8; padding: 2px 8px; border-radius: 12px;
+  font-size: 11px; cursor: pointer; border: none;
+}
+.filter-tag:hover { background: #d2e3fc; }
+.filter-tag.active { background: #1a73e8; color: #fff; }
+.search-box { position: relative; }
+.search-box input { padding-left: 28px; }
+.search-box::before { content: "\1F50D"; position: absolute; left: 8px; top: 7px; font-size: 13px; }
+
+.legend {
+  position: absolute; bottom: 30px; left: 10px; z-index: 1000;
+  background: rgba(255,255,255,0.92); padding: 10px 14px; border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.15); font-size: 12px; max-height: 220px; overflow-y: auto;
+}
+.legend-item { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+.legend-color { width: 14px; height: 14px; border-radius: 50%; border: 1px solid #999; flex-shrink: 0; }
+.legend-title { font-weight: 700; margin-bottom: 4px; }
+
+.popup-content { max-width: 380px; font-size: 13px; }
+.popup-content h3 { margin: 0 0 2px; font-size: 15px; color: #333; }
+.popup-content .region-line { color: #666; font-size: 12px; margin-bottom: 8px; }
+.popup-content .source-block { margin-bottom: 8px; }
+.popup-content .source-label { font-weight: 600; font-size: 12px; color: #555; margin-bottom: 2px; }
+.popup-content .cd-links { display: flex; flex-wrap: wrap; gap: 3px; }
+.popup-content .cd-link {
+  display: inline-block; background: #e8f0fe; color: #1a73e8; padding: 2px 8px;
+  border-radius: 4px; font-size: 12px; text-decoration: none; white-space: nowrap;
+}
+.popup-content .cd-link:hover { background: #1a73e8; color: #fff; }
+.popup-content .cd-link.knjiga { background: #fef3e0; color: #e67e22; }
+.popup-content .cd-link.knjiga:hover { background: #e67e22; color: #fff; }
+.popup-content .cd-link.popis2 { background: #e6f5e6; color: #2e7d32; }
+.popup-content .cd-link.popis2:hover { background: #2e7d32; color: #fff; }
+.popup-content .notes-text { font-size: 11px; color: #888; margin-top: 2px; }
+
+.info-bar {
+  position: absolute; bottom: 10px; right: 290px; z-index: 1000;
+  background: rgba(255,255,255,0.9); padding: 6px 12px; border-radius: 4px;
+  font-size: 12px; color: #666; box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  .filter-panel { width: 220px; font-size: 11px; }
+  .info-bar { right: 10px; bottom: 50px; }
+  .legend { bottom: 80px; max-height: 140px; }
+  .popup-content { max-width: 260px; }
+}
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div class="filter-panel" id="filterPanel">
+  <div class="filter-header">
+    <span>Filteri</span>
+    <button onclick="resetFilters()" style="background:none;border:none;color:#1a73e8;cursor:pointer;font-size:12px;">Poništi</button>
+  </div>
+  <div class="filter-body">
+    <div class="filter-section">
+      <label>Pretraga mjesta</label>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Upiši naziv mjesta..." oninput="applyFilters()">
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <label>Regija (Ctrl+klik za više)</label>
+      <select id="regionFilter" multiple onchange="applyFilters()">
+        <option value="Dalmacija" selected>Dalmacija</option><option value="Dalmacija (Neretva)" selected>Dalmacija (Neretva)</option><option value="Dalmacija (Omiško područje)" selected>Dalmacija (Omiško područje)</option><option value="Dalmacija (Poljica)" selected>Dalmacija (Poljica)</option><option value="Hercegovina" selected>Hercegovina</option><option value="Hrvatsko primorje" selected>Hrvatsko primorje</option><option value="Imotska krajina" selected>Imotska krajina</option><option value="Imotska krajina (Biokovo)" selected>Imotska krajina (Biokovo)</option><option value="Imotska krajina / Poljica" selected>Imotska krajina / Poljica</option><option value="Istra" selected>Istra</option><option value="Kaštela" selected>Kaštela</option><option value="Makarsko primorje" selected>Makarsko primorje</option><option value="Neretvanska krajina" selected>Neretvanska krajina</option><option value="Otok Brač" selected>Otok Brač</option><option value="Otok Cres" selected>Otok Cres</option><option value="Otok Hvar" selected>Otok Hvar</option><option value="Otok Korčula" selected>Otok Korčula</option><option value="Otok Krk" selected>Otok Krk</option><option value="Otok Krk (Dubašnica)" selected>Otok Krk (Dubašnica)</option><option value="Otok Pag" selected>Otok Pag</option><option value="Otok Prvić" selected>Otok Prvić</option><option value="Otok Rab" selected>Otok Rab</option><option value="Otok Vis" selected>Otok Vis</option><option value="Otok Šolta" selected>Otok Šolta</option><option value="Pelješac" selected>Pelješac</option><option value="Poljica" selected>Poljica</option><option value="Ravni kotari" selected>Ravni kotari</option><option value="Ravni kotari / Zagora" selected>Ravni kotari / Zagora</option><option value="Split" selected>Split</option><option value="Zadarski otoci" selected>Zadarski otoci</option><option value="Zadarski otoci (Ugljan)" selected>Zadarski otoci (Ugljan)</option><option value="Zadarsko područje" selected>Zadarsko područje</option><option value="Zadarsko zaleđe" selected>Zadarsko zaleđe</option><option value="Zagora" selected>Zagora</option><option value="Zagora / Poljica" selected>Zagora / Poljica</option><option value="Zagora / Vrgorska krajina" selected>Zagora / Vrgorska krajina</option><option value="Šire splitsko područje" selected>Šire splitsko područje</option><option value="Šire splitsko područje (Poljica)" selected>Šire splitsko područje (Poljica)</option>
+      </select>
+      <div class="filter-count" id="regionCount"></div>
+    </div>
+
+    <div class="filter-section">
+      <label>Izvor</label>
+      <div class="filter-tags" id="sourceTags">
+        <button class="filter-tag active" data-source="popis1" onclick="toggleSource('popis1',this)">Popis 1</button>
+        <button class="filter-tag active" data-source="popis2" onclick="toggleSource('popis2',this)">Popis 2</button>
+        <button class="filter-tag active" data-source="knjiga1" onclick="toggleSource('knjiga1',this)">Knjiga 1</button>
+        <button class="filter-tag active" data-source="knjiga2" onclick="toggleSource('knjiga2',this)">Knjiga 2</button>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <label>Županija</label>
+      <select id="countyFilter" onchange="applyFilters()">
+        <option value="">Sve županije</option>
+      </select>
+    </div>
+
+    <div class="filter-section">
+      <button onclick="resetFilters()" style="width:100%;padding:8px;background:#e8f0fe;color:#1a73e8;border:none;border-radius:4px;cursor:pointer;font-weight:600;">Prikaži sve</button>
+    </div>
+  </div>
+</div>
+
+<div class="legend" id="legend">
+  <div class="legend-title">Regije</div>
+  <div id="legendItems"></div>
+</div>
+
+<div class="info-bar" id="infoBar">Prikazano: 0 lokacija</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
+<script>
+var locations = [{"id": "omisalj", "name": "Omišalj", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.21, "lng": 14.555, "sources": {"popis1": {"cds": [1, 2, 3, 4, 5, 6, 7, 8, 19, 54, 55, 119, 120], "notes": "CD 19 snimano u Rijeci"}}}, {"id": "malinska", "name": "Malinska", "region": "Otok Krk (Dubašnica)", "county": "Primorsko-goranska županija", "lat": 45.125, "lng": 14.528, "sources": {"popis1": {"cds": [5]}}}, {"id": "punat", "name": "Punat", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.015, "lng": 14.63, "sources": {"popis1": {"cds": [9, 10, 112, 113]}}}, {"id": "jurandvor", "name": "Jurandvor", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 44.993, "lng": 14.72, "sources": {"popis1": {"cds": [11, 12, "100C", 111]}}}, {"id": "baska-krk", "name": "Baška", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 44.97, "lng": 14.753, "sources": {"popis1": {"cds": [11, 12, 24, 110]}}}, {"id": "vrbnik", "name": "Vrbnik", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.075, "lng": 14.673, "sources": {"popis1": {"cds": [13, 14, 20, 21, 22, 23, 24, "100A", "100B", "100C", 120, 121, 122, 123]}}}, {"id": "dobrinj", "name": "Dobrinj", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.127, "lng": 14.603, "sources": {"popis1": {"cds": [15, 16, 17, 18, 107]}}}, {"id": "baska-draga", "name": "Baška Draga", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 44.95, "lng": 14.758, "sources": {"popis1": {"cds": [20, "100C", 115, 116]}}}, {"id": "skrpcici", "name": "Skrpčići (Župa Linardići)", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.095, "lng": 14.58, "sources": {"popis1": {"cds": [101, 102]}}}, {"id": "sv-vid-krk", "name": "Sv. Vid", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.03, "lng": 14.56, "sources": {"popis1": {"cds": [103]}}}, {"id": "bogovici", "name": "Bogovići (Dubašnica)", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.118, "lng": 14.535, "sources": {"popis1": {"cds": [104, 117, 118]}}}, {"id": "kras-krk", "name": "Kras", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.11, "lng": 14.6, "sources": {"popis1": {"cds": [105, 106]}}}, {"id": "rasopasno", "name": "Rasopasno", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.125, "lng": 14.56, "sources": {"popis1": {"cds": [106]}}}, {"id": "poljica-krk", "name": "Poljica", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.085, "lng": 14.49, "sources": {"popis1": {"cds": [108]}}}, {"id": "vrh-krk", "name": "Vrh", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.05, "lng": 14.53, "sources": {"popis1": {"cds": [109]}}}, {"id": "risika", "name": "Risika", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.105, "lng": 14.645, "sources": {"popis1": {"cds": [114]}}}, {"id": "krk-ostalo", "name": "Otok Krk (neodređeno)", "region": "Otok Krk", "county": "Primorsko-goranska županija", "lat": 45.03, "lng": 14.575, "sources": {"popis1": {"cds": [138, "139A", "139B"]}}}, {"id": "banjol", "name": "Banjol", "region": "Otok Rab", "county": "Primorsko-goranska županija", "lat": 44.75, "lng": 14.77, "sources": {"popis1": {"cds": [25, 27]}}}, {"id": "lopar", "name": "Lopar", "region": "Otok Rab", "county": "Primorsko-goranska županija", "lat": 44.83, "lng": 14.73, "sources": {"popis1": {"cds": [25, 26]}}}, {"id": "novalja", "name": "Novalja", "region": "Otok Pag", "county": "Ličko-senjska županija", "lat": 44.558, "lng": 14.883, "sources": {"popis1": {"cds": [28, 29, 140]}}}, {"id": "pag-grad", "name": "Pag (grad)", "region": "Otok Pag", "county": "Zadarska županija", "lat": 44.445, "lng": 15.055, "sources": {"popis1": {"cds": [67, 68, 69, 70, 138]}}}, {"id": "trogir", "name": "Trogir", "region": "Šire splitsko područje", "county": "Splitsko-dalmatinska županija", "lat": 43.517, "lng": 16.25, "sources": {"popis1": {"cds": [30, 31]}, "popis2": {"broj": "7", "notes": "U kazalu navedeno i pod 4a Trogir-Solin"}}}, {"id": "lanisce", "name": "Lanišće", "region": "Istra", "county": "Istarska županija", "lat": 45.408, "lng": 14.115, "sources": {"popis1": {"cds": [32, 33, 34, 35]}}}, {"id": "pazin", "name": "Pazin", "region": "Istra", "county": "Istarska županija", "lat": 45.24, "lng": 13.937, "sources": {"popis1": {"cds": [35]}}}, {"id": "hvar-grad", "name": "Hvar (grad)", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.173, "lng": 16.443, "sources": {"popis1": {"cds": [36, 40, 44, 45]}}}, {"id": "stari-grad", "name": "Stari Grad", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.185, "lng": 16.598, "sources": {"popis1": {"cds": [36, 37]}, "popis2": {"broj": "13"}}}, {"id": "brusje", "name": "Brusje", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.17, "lng": 16.49, "sources": {"popis1": {"cds": [37, 38, 39, 40, 41, 45, 46]}}}, {"id": "jelsa", "name": "Jelsa", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.162, "lng": 16.693, "sources": {"popis1": {"cds": [41, 42, 43]}, "popis2": {"broj": "20"}}}, {"id": "vrboska", "name": "Vrboska", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.18, "lng": 16.672, "sources": {"popis2": {"broj": "14"}}}, {"id": "vrbanj", "name": "Vrbanj", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.165, "lng": 16.645, "sources": {"popis2": {"broj": "15"}}}, {"id": "vrisnik", "name": "Vrisnik", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.152, "lng": 16.655, "sources": {"popis1": {"cds": [47]}, "popis2": {"broj": "17"}}}, {"id": "svirce", "name": "Svirče", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.155, "lng": 16.68, "sources": {"popis2": {"broj": "18"}}}, {"id": "pitve", "name": "Pitve", "region": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "lat": 43.16, "lng": 16.67, "sources": {"popis2": {"broj": "21"}}}, {"id": "kukuljica", "name": "Kukuljica (Kukljica)", "region": "Zadarski otoci (Ugljan)", "county": "Zadarska županija", "lat": 44.033, "lng": 15.25, "sources": {"popis1": {"cds": [47, 48]}}}, {"id": "sestrunj", "name": "Sestrunj", "region": "Zadarski otoci", "county": "Zadarska županija", "lat": 44.152, "lng": 14.999, "sources": {"popis1": {"cds": [48, 49, 140]}}}, {"id": "preko", "name": "Preko (Ugljan)", "region": "Zadarski otoci", "county": "Zadarska županija", "lat": 44.08, "lng": 15.188, "sources": {"popis1": {"cds": [49, 50]}}}, {"id": "cara", "name": "Čara", "region": "Otok Korčula", "county": "Dubrovačko-neretvanska županija", "lat": 42.935, "lng": 16.93, "sources": {"popis1": {"cds": [51, 52, 53]}}}, {"id": "smokvica", "name": "Smokvica", "region": "Otok Korčula", "county": "Dubrovačko-neretvanska županija", "lat": 42.93, "lng": 16.9, "sources": {"popis1": {"cds": [51, 52]}}}, {"id": "racisce", "name": "Račišće", "region": "Otok Korčula", "county": "Dubrovačko-neretvanska županija", "lat": 42.975, "lng": 17.01, "sources": {"popis1": {"cds": [52, 53]}}}, {"id": "crnovo", "name": "Črnovo (Korčula)", "region": "Otok Korčula", "county": "Dubrovačko-neretvanska županija", "lat": 42.95, "lng": 17.12, "sources": {"popis1": {"cds": [53]}}}, {"id": "ston", "name": "Ston", "region": "Pelješac", "county": "Dubrovačko-neretvanska županija", "lat": 42.838, "lng": 17.697, "sources": {"popis1": {"cds": [53]}}}, {"id": "kastel-stafilic", "name": "Kaštel Štafilić", "region": "Kaštela", "county": "Splitsko-dalmatinska županija", "lat": 43.55, "lng": 16.33, "sources": {"popis1": {"cds": [56, 57, 58, 59]}, "popis2": {"broj": "9"}}}, {"id": "kastel-kambelovac", "name": "Kaštel Kambelovac", "region": "Kaštela", "county": "Splitsko-dalmatinska županija", "lat": 43.55, "lng": 16.38, "sources": {"popis1": {"cds": [59, 62, 63, 64, 65]}, "popis2": {"broj": "13"}}}, {"id": "kastel-stari", "name": "Kaštel Stari", "region": "Kaštela", "county": "Splitsko-dalmatinska županija", "lat": 43.553, "lng": 16.345, "sources": {"popis1": {"cds": [59, 60, 63, 64]}, "popis2": {"broj": "11"}}}, {"id": "kastel-sucurac", "name": "Kaštel Sućurac", "region": "Kaštela", "county": "Splitsko-dalmatinska županija", "lat": 43.548, "lng": 16.42, "sources": {"popis1": {"cds": [60, 61]}}}, {"id": "kastel-novi", "name": "Kaštel Novi", "region": "Kaštela", "county": "Splitsko-dalmatinska županija", "lat": 43.553, "lng": 16.333, "sources": {"popis2": {"broj": "10"}}}, {"id": "kastel-luksic", "name": "Kaštel Lukšić", "region": "Kaštela", "county": "Splitsko-dalmatinska županija", "lat": 43.555, "lng": 16.365, "sources": {"popis1": {"cds": [62, 64]}, "popis2": {"broj": "12"}}}, {"id": "vranjic", "name": "Vranjic", "region": "Šire splitsko područje", "county": "Splitsko-dalmatinska županija", "lat": 43.533, "lng": 16.467, "sources": {"popis1": {"cds": [61, 62]}, "popis2": {"broj": "3"}}}, {"id": "pridraga", "name": "Pridraga", "region": "Zadarsko zaleđe", "county": "Zadarska županija", "lat": 44.155, "lng": 15.58, "sources": {"popis1": {"cds": [66, 67]}}}, {"id": "novi-vinodolski", "name": "Novi Vinodolski", "region": "Hrvatsko primorje", "county": "Primorsko-goranska županija", "lat": 45.128, "lng": 14.79, "sources": {"popis1": {"cds": [70, 71, 72, 140]}}}, {"id": "petrcane", "name": "Petrčane", "region": "Zadarsko područje", "county": "Zadarska županija", "lat": 44.185, "lng": 15.16, "sources": {"popis1": {"cds": [73]}}}, {"id": "orlec", "name": "Orlec", "region": "Otok Cres", "county": "Primorsko-goranska županija", "lat": 44.88, "lng": 14.42, "sources": {"popis1": {"cds": [74, 75]}}}, {"id": "cres-ostalo", "name": "Cres (neodređeno)", "region": "Otok Cres", "county": "Primorsko-goranska županija", "lat": 44.96, "lng": 14.41, "sources": {"popis1": {"cds": [140]}}}, {"id": "rogoznica", "name": "Rogoznica", "region": "Dalmacija", "county": "Šibensko-kninska županija", "lat": 43.525, "lng": 15.97, "sources": {"popis1": {"cds": [76, 77, 78]}}}, {"id": "primosten", "name": "Primošten", "region": "Dalmacija", "county": "Šibensko-kninska županija", "lat": 43.585, "lng": 15.925, "sources": {"popis1": {"cds": [77]}}}, {"id": "komiza", "name": "Komiža", "region": "Otok Vis", "county": "Splitsko-dalmatinska županija", "lat": 43.043, "lng": 16.09, "sources": {"popis1": {"cds": [78, 79]}}}, {"id": "vis-grad", "name": "Vis (grad)", "region": "Otok Vis", "county": "Splitsko-dalmatinska županija", "lat": 43.06, "lng": 16.183, "sources": {"popis1": {"cds": [79, 80]}}}, {"id": "luka-prvic", "name": "Luka (Prvić)", "region": "Otok Prvić", "county": "Šibensko-kninska županija", "lat": 43.725, "lng": 15.795, "sources": {"popis1": {"cds": [80, 81]}}}, {"id": "sepurine", "name": "Šepurine (Prvić)", "region": "Otok Prvić", "county": "Šibensko-kninska županija", "lat": 43.73, "lng": 15.79, "sources": {"popis1": {"cds": [80, 81, 82]}}}, {"id": "vodice", "name": "Vodice", "region": "Dalmacija", "county": "Šibensko-kninska županija", "lat": 43.757, "lng": 15.775, "sources": {"popis1": {"cds": [82, 83]}}}, {"id": "duce-rogac", "name": "Duće - Rogač", "region": "Dalmacija (Omiško područje)", "county": "Splitsko-dalmatinska županija", "lat": 43.44, "lng": 16.67, "sources": {"popis1": {"cds": [84]}}}, {"id": "podstrana", "name": "Podstrana (Sv. Martin - Žadine)", "region": "Dalmacija", "county": "Splitsko-dalmatinska županija", "lat": 43.49, "lng": 16.55, "sources": {"popis1": {"cds": [85, 86]}}}, {"id": "gata", "name": "Gata", "region": "Dalmacija (Poljica)", "county": "Splitsko-dalmatinska županija", "lat": 43.465, "lng": 16.7, "sources": {"popis1": {"cds": [87]}}}, {"id": "tugare", "name": "Tugare", "region": "Dalmacija (Poljica)", "county": "Splitsko-dalmatinska županija", "lat": 43.465, "lng": 16.66, "sources": {"popis1": {"cds": [88, 89]}}}, {"id": "srijane", "name": "Srijane - Vela Njiva", "region": "Dalmacija", "county": "Splitsko-dalmatinska županija", "lat": 43.51, "lng": 16.74, "sources": {"popis1": {"cds": [90]}}}, {"id": "jesenice-sumpetar", "name": "Jesenice - Sumpetar", "region": "Dalmacija (Poljica)", "county": "Splitsko-dalmatinska županija", "lat": 43.45, "lng": 16.61, "sources": {"popis1": {"cds": [91, 92, 93, 94, 95]}}}, {"id": "kostanje", "name": "Kostanje", "region": "Dalmacija", "county": "Splitsko-dalmatinska županija", "lat": 43.44, "lng": 16.64, "sources": {"popis1": {"cds": [96, 97, 98, 99]}}}, {"id": "baska-voda", "name": "Baška Voda", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.357, "lng": 16.95, "sources": {"popis1": {"cds": [124]}}}, {"id": "tucepi", "name": "Tučepi", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.27, "lng": 17.055, "sources": {"popis1": {"cds": [124, 125]}}}, {"id": "podgora", "name": "Podgora", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.242, "lng": 17.078, "sources": {"popis1": {"cds": [125]}}}, {"id": "veliko-brdo", "name": "Veliko Brdo", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.31, "lng": 17.03, "sources": {"popis1": {"cds": [125]}, "knjiga2": {"cds": ["nepoznat CD"], "notes": "Spominje se kao lokacija u kontekstu Knjige 2 (CD 2)"}}}, {"id": "drivenik-makarska", "name": "Drivenik", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.265, "lng": 17.008, "sources": {"popis1": {"cds": [126]}, "knjiga2": {"cds": [2], "tracks": ["06-08"]}}}, {"id": "zaostrog", "name": "Zaostrog", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.142, "lng": 17.28, "sources": {"popis1": {"cds": [126, 127]}}}, {"id": "podaca", "name": "Podaca", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.13, "lng": 17.298, "sources": {"popis1": {"cds": [127]}}}, {"id": "brist", "name": "Brist", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.12, "lng": 17.32, "sources": {"popis1": {"cds": [127, 128]}, "knjiga2": {"cds": [2, 3], "tracks": ["CD2-36", "CD3-08-09", "CD3-22-23"]}}}, {"id": "makarska", "name": "Makarska", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.293, "lng": 17.02, "sources": {"popis1": {"cds": [128]}}}, {"id": "zivogosce", "name": "Živogošće", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.18, "lng": 17.163, "sources": {"popis1": {"cds": [129]}}}, {"id": "bast", "name": "Bast", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.3, "lng": 16.985, "sources": {"popis1": {"cds": [129]}}}, {"id": "brela-donja", "name": "Brela Donja", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.37, "lng": 16.93, "sources": {"popis1": {"cds": [130]}}}, {"id": "igrane", "name": "Igrane", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.2, "lng": 17.14, "sources": {"popis1": {"cds": [130]}, "knjiga2": {"cds": [1], "tracks": ["01-12"]}}}, {"id": "draznice", "name": "Dražnice", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.22, "lng": 17.11, "sources": {"popis1": {"cds": [130]}}}, {"id": "vinjani", "name": "Vinjani", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.4, "lng": 17.23, "sources": {"popis1": {"cds": [131]}}}, {"id": "runovici", "name": "Runovići", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.378, "lng": 17.22, "sources": {"popis1": {"cds": [131]}, "knjiga1": {"cds": [3], "tracks": ["01"]}}}, {"id": "zmijavci", "name": "Zmijavci", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.41, "lng": 17.21, "sources": {"popis1": {"cds": [131]}}}, {"id": "sredicna", "name": "Sredična (Proložac)", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.44, "lng": 17.19, "sources": {"popis1": {"cds": [131]}}}, {"id": "prolozac", "name": "Proložac", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.468, "lng": 17.155, "sources": {"popis1": {"cds": [131]}}}, {"id": "zupa-biokovska", "name": "Župa Biokovska", "region": "Imotska krajina (Biokovo)", "county": "Splitsko-dalmatinska županija", "lat": 43.33, "lng": 17.11, "sources": {"popis1": {"cds": [133]}}}, {"id": "zagvozd", "name": "Zagvozd", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.395, "lng": 17.055, "sources": {"popis1": {"cds": [133]}}}, {"id": "imotski", "name": "Imotski", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.448, "lng": 17.215, "sources": {"popis1": {"cds": [133, 134, 135]}}}, {"id": "poljica-imotska", "name": "Poljica Imotska", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.45, "lng": 17.19, "sources": {"popis1": {"cds": [133]}}}, {"id": "podbablje", "name": "Podbablje", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.42, "lng": 17.17, "sources": {"popis1": {"cds": [135]}}}, {"id": "lokvicici", "name": "Lokvičići", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.43, "lng": 17.1, "sources": {"popis1": {"cds": [135]}}}, {"id": "cista-velika", "name": "Cista Velika", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.51, "lng": 17.03, "sources": {"popis1": {"cds": [135]}}}, {"id": "rogoznica-lokva", "name": "Rogoznica - Lokva (Imotski)", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.47, "lng": 17.08, "sources": {"popis1": {"cds": [135]}}}, {"id": "katuni-krecevo", "name": "Katuni-Krećevo", "region": "Imotska krajina / Poljica", "county": "Splitsko-dalmatinska županija", "lat": 43.455, "lng": 17.025, "sources": {"popis1": {"cds": [135]}}}, {"id": "ricice", "name": "Ričice", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.51, "lng": 17.11, "sources": {"popis1": {"cds": [134]}}}, {"id": "studenci", "name": "Studenci", "region": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.45, "lng": 17.15, "sources": {"popis1": {"cds": [134]}}}, {"id": "blato-na-cetini", "name": "Blato na Cetini", "region": "Zagora / Poljica", "county": "Splitsko-dalmatinska županija", "lat": 43.49, "lng": 16.84, "sources": {"popis1": {"cds": [136]}}}, {"id": "slime", "name": "Slime", "region": "Zagora / Poljica", "county": "Splitsko-dalmatinska županija", "lat": 43.48, "lng": 16.87, "sources": {"popis1": {"cds": [136]}}}, {"id": "zadvarje", "name": "Zadvarje", "region": "Zagora / Poljica", "county": "Splitsko-dalmatinska županija", "lat": 43.435, "lng": 16.89, "sources": {"popis1": {"cds": [136]}}}, {"id": "krstatice", "name": "Krstatice", "region": "Zagora / Poljica", "county": "Splitsko-dalmatinska županija", "lat": 43.445, "lng": 16.92, "sources": {"popis1": {"cds": [136]}}}, {"id": "donje-sitno", "name": "Donje Sitno (Poljica)", "region": "Poljica", "county": "Splitsko-dalmatinska županija", "lat": 43.5, "lng": 16.6, "sources": {"popis1": {"cds": [137]}}}, {"id": "sukosan", "name": "Sukošan", "region": "Zadarsko područje", "county": "Zadarska županija", "lat": 44.048, "lng": 15.315, "sources": {"popis1": {"cds": [140]}}}, {"id": "posedarje", "name": "Posedarje", "region": "Zadarsko područje", "county": "Zadarska županija", "lat": 44.215, "lng": 15.48, "sources": {"popis1": {"cds": [141]}}}, {"id": "zadar", "name": "Zadar", "region": "Zadarsko područje", "county": "Zadarska županija", "lat": 44.119, "lng": 15.232, "sources": {"popis1": {"cds": [141]}}}, {"id": "komin", "name": "Komin", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 43.04, "lng": 17.535, "sources": {"popis1": {"cds": [143]}}}, {"id": "bagalovic", "name": "Bagalović", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 43.06, "lng": 17.55, "sources": {"popis1": {"cds": [143, 144]}}}, {"id": "vid", "name": "Vid", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 43.08, "lng": 17.49, "sources": {"popis1": {"cds": [144]}}}, {"id": "opuzen", "name": "Opuzen", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 43.015, "lng": 17.565, "sources": {"popis1": {"cds": [145, 146]}}}, {"id": "vidonje", "name": "Vidonje", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 43.0, "lng": 17.47, "sources": {"popis1": {"cds": [146, 147]}}}, {"id": "metkovic", "name": "Metković", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 43.055, "lng": 17.648, "sources": {"popis1": {"cds": [147, 148]}, "knjiga1": {"cds": [1, 2, 3, 4], "tracks": ["CD1-14-16", "CD2-03", "CD2-07", "CD2-11", "CD3-04-05", "CD4-11", "CD4-14", "CD4-17"]}}}, {"id": "slivno-ravno", "name": "Slivno - Ravno", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 42.98, "lng": 17.54, "sources": {"popis1": {"cds": [148]}}}, {"id": "rogotin", "name": "Rogotin", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 43.045, "lng": 17.47, "sources": {"popis1": {"cds": [148, 149]}}}, {"id": "bijeli-vir", "name": "Bijeli Vir", "region": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "lat": 43.01, "lng": 17.48, "sources": {"popis1": {"cds": [149, 150]}}}, {"id": "veljaci-grab-sinac", "name": "Veljaci-Grab-Sinac", "region": "Hercegovina", "county": "Bosna i Hercegovina", "lat": 43.1, "lng": 17.55, "sources": {"popis1": {"cds": [150]}}}, {"id": "trebizat", "name": "Trebizat", "region": "Hercegovina", "county": "Bosna i Hercegovina", "lat": 43.13, "lng": 17.54, "sources": {"popis1": {"cds": [151]}}}, {"id": "desne", "name": "Desne", "region": "Dalmacija (Neretva)", "county": "Dubrovačko-neretvanska županija", "lat": 43.06, "lng": 17.54, "sources": {"popis1": {"cds": [151]}}}, {"id": "borovci", "name": "Borovci", "region": "Dalmacija (Neretva)", "county": "Dubrovačko-neretvanska županija", "lat": 43.07, "lng": 17.52, "sources": {"popis1": {"cds": [151]}}}, {"id": "ploce", "name": "Ploče", "region": "Dalmacija (Neretva)", "county": "Dubrovačko-neretvanska županija", "lat": 43.055, "lng": 17.432, "sources": {"popis1": {"cds": [152]}}}, {"id": "capljina", "name": "Čapljina", "region": "Hercegovina", "county": "Bosna i Hercegovina", "lat": 43.115, "lng": 17.705, "sources": {"popis1": {"cds": [152]}}}, {"id": "pucisca", "name": "Pučišća", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.348, "lng": 16.733, "sources": {"popis2": {"broj": "1"}}}, {"id": "gornji-humac", "name": "Gornji Humac", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.295, "lng": 16.71, "sources": {"popis2": {"broj": "2"}}}, {"id": "donji-humac", "name": "Donji Humac", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.34, "lng": 16.56, "sources": {"popis2": {"broj": "3"}}}, {"id": "praznice", "name": "Pražnice", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.32, "lng": 16.7, "sources": {"popis2": {"broj": "4"}}}, {"id": "dol-brac", "name": "Dol", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.35, "lng": 16.62, "sources": {"popis2": {"broj": "5a"}}}, {"id": "postira", "name": "Postira", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.375, "lng": 16.63, "sources": {"popis2": {"broj": "5b"}}}, {"id": "splitska", "name": "Splitska", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.375, "lng": 16.605, "sources": {"popis2": {"broj": "6"}}}, {"id": "supetar", "name": "Supetar", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.384, "lng": 16.555, "sources": {"popis2": {"broj": "7a"}}}, {"id": "selca", "name": "Selca", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.295, "lng": 16.845, "sources": {"popis2": {"broj": "7b"}}}, {"id": "novo-selo", "name": "Novo Selo", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.32, "lng": 16.84, "sources": {"popis2": {"broj": "8"}}}, {"id": "skrip", "name": "Škrip", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.355, "lng": 16.61, "sources": {"popis2": {"broj": "9"}}}, {"id": "nerezisca", "name": "Nerežišća", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.33, "lng": 16.575, "sources": {"popis2": {"broj": "10"}}}, {"id": "bol", "name": "Bol", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.262, "lng": 16.655, "sources": {"popis2": {"broj": "12"}}}, {"id": "veli-varos", "name": "Veli Varoš (Split)", "region": "Split", "county": "Splitsko-dalmatinska županija", "lat": 43.51, "lng": 16.435, "sources": {"popis2": {"broj": "1"}}}, {"id": "solin", "name": "Solin", "region": "Šire splitsko područje", "county": "Splitsko-dalmatinska županija", "lat": 43.54, "lng": 16.49, "sources": {"popis2": {"broj": "2", "notes": "Također pod 4a Trogir-Solin"}}}, {"id": "stobrec", "name": "Stobreč", "region": "Šire splitsko područje", "county": "Splitsko-dalmatinska županija", "lat": 43.505, "lng": 16.52, "sources": {"popis2": {"broj": "4b"}}}, {"id": "klis", "name": "Klis", "region": "Šire splitsko područje", "county": "Splitsko-dalmatinska županija", "lat": 43.56, "lng": 16.52, "sources": {"popis2": {"broj": "6", "notes": "Ponovno naveden i pod brojem 15"}}}, {"id": "gornje-selo", "name": "Gornje Selo", "region": "Otok Šolta", "county": "Splitsko-dalmatinska županija", "lat": 43.355, "lng": 16.34, "sources": {"popis2": {"broj": "8"}}}, {"id": "krilo-jesenice", "name": "Krilo - Jesenice", "region": "Šire splitsko područje (Poljica)", "county": "Splitsko-dalmatinska županija", "lat": 43.46, "lng": 16.6, "sources": {"popis2": {"broj": "14"}}}, {"id": "lisane-ostrovicke", "name": "Lišane Ostrovičke", "region": "Ravni kotari / Zagora", "county": "Zadarska županija", "lat": 43.97, "lng": 15.77, "sources": {"knjiga1": {"cds": [1, 4], "tracks": ["CD1-01-06", "CD1-18", "CD1-22-23", "CD4-22"]}}}, {"id": "stankovci", "name": "Stankovci", "region": "Ravni kotari", "county": "Zadarska županija", "lat": 43.91, "lng": 15.7, "sources": {"knjiga1": {"cds": [1, 3, 4], "tracks": ["CD1-07-13", "CD1-19-20", "CD1-25", "CD3-02", "CD4-07-09", "CD4-21"]}}}, {"id": "split", "name": "Split (crkva sestara Službenica Milosrđa - Anđele)", "region": "Split", "county": "Splitsko-dalmatinska županija", "lat": 43.508, "lng": 16.44, "sources": {"knjiga1": {"cds": [1, 2, 3, 4], "tracks": ["CD1-17", "CD1-21", "CD2-09", "CD3-06", "CD4-05-06", "CD4-10", "CD4-20"]}}}, {"id": "prgomet", "name": "Prgomet", "region": "Zagora", "county": "Splitsko-dalmatinska županija", "lat": 43.615, "lng": 16.23, "sources": {"knjiga1": {"cds": [1, 2], "tracks": ["CD1-24", "CD2-02"]}}}, {"id": "sumartin", "name": "Sumartin", "region": "Otok Brač", "county": "Splitsko-dalmatinska županija", "lat": 43.285, "lng": 16.873, "sources": {"knjiga1": {"cds": [2, 4], "tracks": ["CD2-01", "CD2-04-06", "CD2-08", "CD2-10", "CD4-01-02", "CD4-12"]}}}, {"id": "vrgorac", "name": "Vrgorac", "region": "Zagora / Vrgorska krajina", "county": "Splitsko-dalmatinska županija", "lat": 43.205, "lng": 17.37, "sources": {"knjiga1": {"cds": [4], "tracks": ["CD4-13", "CD4-16"]}, "knjiga2": {"cds": [3], "tracks": ["CD3-07"]}}}, {"id": "mirlovic-zagora", "name": "Mirlović Zagora", "region": "Zagora", "county": "Šibensko-kninska županija", "lat": 43.76, "lng": 16.1, "sources": {"knjiga2": {"cds": [1, 2, 3], "tracks": ["CD1-13-18", "CD2-20-21", "CD2-30", "CD2-34", "CD2-38", "CD2-44", "CD3-05", "CD3-11", "CD3-24", "CD3-31-32"]}}}, {"id": "rupe", "name": "Rupe", "region": "Zagora", "county": "Šibensko-kninska županija", "lat": 43.72, "lng": 16.105, "sources": {"knjiga2": {"cds": [1, 2, 3], "tracks": ["CD1-19-22", "CD2-23", "CD2-31", "CD2-41", "CD3-27"]}}}, {"id": "cvrljevo", "name": "Čvrljevo", "region": "Zagora", "county": "Šibensko-kninska županija", "lat": 43.74, "lng": 16.08, "sources": {"knjiga2": {"cds": [1, 2, 3], "tracks": ["CD1-23-26 (snimljeno u Splitu)", "CD2-32", "CD2-39"]}}}, {"id": "banjevci", "name": "Banjevci", "region": "Zagora", "county": "Zadarska županija", "lat": 43.89, "lng": 15.66, "sources": {"knjiga2": {"cds": [1, 2, 3], "tracks": ["CD1-27-31", "CD2-24", "CD2-35", "CD3-26"]}}}, {"id": "radosic", "name": "Radošić", "region": "Zagora", "county": "Splitsko-dalmatinska županija", "lat": 43.67, "lng": 16.33, "sources": {"knjiga2": {"cds": [2, 3], "tracks": ["CD2-01-05", "CD2-25", "CD2-33", "CD2-42", "CD3-28-29"]}}}, {"id": "miljevci", "name": "Miljevci", "region": "Zagora", "county": "Šibensko-kninska županija", "lat": 43.67, "lng": 15.97, "sources": {"knjiga2": {"cds": [2, 3], "tracks": ["CD2-22", "CD2-43", "CD2-45", "CD3-10", "CD3-25", "CD3-30"]}}}, {"id": "promina", "name": "Promina", "region": "Zagora", "county": "Šibensko-kninska županija", "lat": 43.95, "lng": 16.08, "sources": {"knjiga2": {"cds": [3], "tracks": ["CD3-12"]}}}, {"id": "veliko-brdo-makarska", "name": "Veliko Brdo (Makarska)", "region": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "lat": 43.31, "lng": 17.03, "sources": {"popis1": {"cds": [125]}, "knjiga2": {"notes": "Spominje se u Knjizi 2"}}}];
+var regions = [{"id": "krk", "name": "Otok Krk", "county": "Primorsko-goranska županija", "subregions": ["Dubašnica"], "locations": ["omisalj", "malinska", "punat", "jurandvor", "baska-krk", "vrbnik", "dobrinj", "baska-draga", "skrpcici", "sv-vid-krk", "bogovici", "kras-krk", "rasopasno", "poljica-krk", "vrh-krk", "risika"]}, {"id": "rab", "name": "Otok Rab", "county": "Primorsko-goranska županija", "locations": ["banjol", "lopar"]}, {"id": "pag", "name": "Otok Pag", "county": "Ličko-senjska / Zadarska županija", "locations": ["novalja", "pag-grad"]}, {"id": "istra", "name": "Istra", "county": "Istarska županija", "locations": ["lanisce", "pazin"]}, {"id": "hvar", "name": "Otok Hvar", "county": "Splitsko-dalmatinska županija", "locations": ["hvar-grad", "stari-grad", "brusje", "jelsa", "vrboska", "vrbanj", "vrisnik", "svirce", "pitve"]}, {"id": "brac", "name": "Otok Brač", "county": "Splitsko-dalmatinska županija", "locations": ["pucisca", "gornji-humac", "donji-humac", "praznice", "dol-brac", "postira", "splitska", "supetar", "selca", "novo-selo", "skrip", "nerezisca", "bol", "sumartin"]}, {"id": "solta", "name": "Otok Šolta", "county": "Splitsko-dalmatinska županija", "locations": ["gornje-selo"]}, {"id": "korcula", "name": "Otok Korčula", "county": "Dubrovačko-neretvanska županija", "locations": ["cara", "smokvica", "racisce", "crnovo"]}, {"id": "cres", "name": "Otok Cres", "county": "Primorsko-goranska županija", "locations": ["orlec", "cres-ostalo"]}, {"id": "vis", "name": "Otok Vis", "county": "Splitsko-dalmatinska županija", "locations": ["komiza", "vis-grad"]}, {"id": "prvic", "name": "Otok Prvić", "county": "Šibensko-kninska županija", "locations": ["luka-prvic", "sepurine"]}, {"id": "zadarski-otoci", "name": "Zadarski otoci", "county": "Zadarska županija", "subregions": ["Ugljan"], "locations": ["kukuljica", "sestrunj", "preko"]}, {"id": "kastela", "name": "Kaštela", "county": "Splitsko-dalmatinska županija", "locations": ["kastel-stafilic", "kastel-kambelovac", "kastel-stari", "kastel-sucurac", "kastel-novi", "kastel-luksic"]}, {"id": "split", "name": "Split i šire splitsko područje", "county": "Splitsko-dalmatinska županija", "locations": ["split", "veli-varos", "solin", "vranjic", "stobrec", "klis", "krilo-jesenice"]}, {"id": "makarsko-primorje", "name": "Makarsko primorje", "county": "Splitsko-dalmatinska županija", "locations": ["baska-voda", "tucepi", "podgora", "veliko-brdo", "drivenik-makarska", "zaostrog", "podaca", "brist", "makarska", "zivogosce", "bast", "brela-donja", "igrane", "draznice"]}, {"id": "imotska-krajina", "name": "Imotska krajina", "county": "Splitsko-dalmatinska županija", "locations": ["vinjani", "runovici", "zmijavci", "sredicna", "prolozac", "zupa-biokovska", "zagvozd", "imotski", "poljica-imotska", "podbablje", "lokvicici", "cista-velika", "rogoznica-lokva", "katuni-krecevo", "ricice", "studenci"]}, {"id": "zagora", "name": "Zagora (šira unutrašnjost Dalmacije)", "county": "Splitsko-dalmatinska / Šibensko-kninska / Zadarska županija", "locations": ["lisane-ostrovicke", "stankovci", "prgomet", "vrgorac", "mirlovic-zagora", "rupe", "cvrljevo", "banjevci", "radosic", "miljevci", "promina"]}, {"id": "poljica", "name": "Poljica", "county": "Splitsko-dalmatinska županija", "locations": ["gata", "tugare", "jesenice-sumpetar", "donje-sitno", "blato-na-cetini", "slime", "zadvarje", "krstatice"]}, {"id": "neretva", "name": "Neretvanska krajina", "county": "Dubrovačko-neretvanska županija", "locations": ["komin", "bagalovic", "vid", "opuzen", "vidonje", "metkovic", "slivno-ravno", "rogotin", "bijeli-vir", "desne", "borovci", "ploce"]}, {"id": "hercegovina", "name": "Hercegovina", "county": "Bosna i Hercegovina", "locations": ["veljaci-grab-sinac", "trebizat", "capljina"]}, {"id": "zadarsko-podrucje", "name": "Zadarsko područje", "county": "Zadarska županija", "locations": ["petrcane", "sukosan", "posedarje", "zadar", "pridraga"]}, {"id": "sibensko-podrucje", "name": "Šibensko područje i obala", "county": "Šibensko-kninska županija", "locations": ["rogoznica", "primosten", "vodice"]}, {"id": "peljesac", "name": "Pelješac", "county": "Dubrovačko-neretvanska županija", "locations": ["ston"]}, {"id": "primorje", "name": "Hrvatsko primorje", "county": "Primorsko-goranska županija", "locations": ["novi-vinodolski"]}, {"id": "dalmatinska-zagora-ostalo", "name": "Ostala dalmatinska mjesta", "county": "Splitsko-dalmatinska županija", "locations": ["duce-rogac", "podstrana", "srijane", "kostanje"]}];
+var regionColors = {"Dalmacija": "#e6194b", "Dalmacija (Neretva)": "#3cb44b", "Dalmacija (Omiško područje)": "#ffe119", "Dalmacija (Poljica)": "#4363d8", "Hercegovina": "#f58231", "Hrvatsko primorje": "#911eb4", "Imotska krajina": "#46f0f0", "Imotska krajina (Biokovo)": "#f032e6", "Imotska krajina / Poljica": "#bcf60c", "Istra": "#fabebe", "Kaštela": "#008080", "Makarsko primorje": "#e6beff", "Neretvanska krajina": "#9a6324", "Otok Brač": "#800000", "Otok Cres": "#aaffc3", "Otok Hvar": "#808000", "Otok Korčula": "#ffd8b1", "Otok Krk": "#000075", "Otok Krk (Dubašnica)": "#808080", "Otok Pag": "#000000", "Otok Prvić": "#e6e6e6", "Otok Rab": "#1a1a1a", "Otok Vis": "#ff6eb4", "Otok Šolta": "#7f7f7f", "Pelješac": "#00ff7f", "Poljica": "#8b4513", "Ravni kotari": "#dc143c", "Ravni kotari / Zagora": "#4169e1", "Split": "#e6194b", "Zadarski otoci": "#3cb44b", "Zadarski otoci (Ugljan)": "#ffe119", "Zadarsko područje": "#4363d8", "Zadarsko zaleđe": "#f58231", "Zagora": "#911eb4", "Zagora / Poljica": "#46f0f0", "Zagora / Vrgorska krajina": "#f032e6", "Šire splitsko područje": "#bcf60c", "Šire splitsko područje (Poljica)": "#fabebe"};
+var regionNames = ["Dalmacija", "Dalmacija (Neretva)", "Dalmacija (Omiško područje)", "Dalmacija (Poljica)", "Hercegovina", "Hrvatsko primorje", "Imotska krajina", "Imotska krajina (Biokovo)", "Imotska krajina / Poljica", "Istra", "Kaštela", "Makarsko primorje", "Neretvanska krajina", "Otok Brač", "Otok Cres", "Otok Hvar", "Otok Korčula", "Otok Krk", "Otok Krk (Dubašnica)", "Otok Pag", "Otok Prvić", "Otok Rab", "Otok Vis", "Otok Šolta", "Pelješac", "Poljica", "Ravni kotari", "Ravni kotari / Zagora", "Split", "Zadarski otoci", "Zadarski otoci (Ugljan)", "Zadarsko područje", "Zadarsko zaleđe", "Zagora", "Zagora / Poljica", "Zagora / Vrgorska krajina", "Šire splitsko područje", "Šire splitsko područje (Poljica)"];
+
+var cdUrlMap = {"1": "https://stin.hr/portfolio-items/cd-1-10/#cd1", "2": "https://stin.hr/portfolio-items/cd-1-10/#cd2", "3": "https://stin.hr/portfolio-items/cd-1-10/#cd3", "4": "https://stin.hr/portfolio-items/cd-1-10/#cd4", "5": "https://stin.hr/portfolio-items/cd-1-10/#cd5", "6": "https://stin.hr/portfolio-items/cd-1-10/#cd6", "7": "https://stin.hr/portfolio-items/cd-1-10/#cd7", "8": "https://stin.hr/portfolio-items/cd-1-10/#cd8", "9": "https://stin.hr/portfolio-items/cd-1-10/#cd9", "10": "https://stin.hr/portfolio-items/cd-1-10/#cd10", "11": "https://stin.hr/portfolio-items/cd-11-20/#cd11", "12": "https://stin.hr/portfolio-items/cd-11-20/#cd12", "13": "https://stin.hr/portfolio-items/cd-11-20/#cd13", "14": "https://stin.hr/portfolio-items/cd-11-20/#cd14", "15": "https://stin.hr/portfolio-items/cd-11-20/#cd15", "16": "https://stin.hr/portfolio-items/cd-11-20/#cd16", "17": "https://stin.hr/portfolio-items/cd-11-20/#cd17", "18": "https://stin.hr/portfolio-items/cd-11-20/#cd18", "19": "https://stin.hr/portfolio-items/cd-11-20/#cd19", "20": "https://stin.hr/portfolio-items/cd-11-20/#cd20", "21": "https://stin.hr/portfolio-items/cd-21-30/#cd21", "22": "https://stin.hr/portfolio-items/cd-21-30/#cd22", "23": "https://stin.hr/portfolio-items/cd-21-30/#cd23", "24": "https://stin.hr/portfolio-items/cd-21-30/#cd24", "25": "https://stin.hr/portfolio-items/cd-21-30/#cd25", "26": "https://stin.hr/portfolio-items/cd-21-30/#cd26", "27": "https://stin.hr/portfolio-items/cd-21-30/#cd27", "28": "https://stin.hr/portfolio-items/cd-21-30/#cd28", "29": "https://stin.hr/portfolio-items/cd-21-30/#cd29", "30": "https://stin.hr/portfolio-items/cd-21-30/#cd30", "31": "https://stin.hr/portfolio-items/cd-31-40/#cd31", "32": "https://stin.hr/portfolio-items/cd-31-40/#cd32", "33": "https://stin.hr/portfolio-items/cd-31-40/#cd33", "34": "https://stin.hr/portfolio-items/cd-31-40/#cd34", "35": "https://stin.hr/portfolio-items/cd-31-40/#cd35", "36": "https://stin.hr/portfolio-items/cd-31-40/#cd36", "37": "https://stin.hr/portfolio-items/cd-31-40/#cd37", "38": "https://stin.hr/portfolio-items/cd-31-40/#cd38", "39": "https://stin.hr/portfolio-items/cd-31-40/#cd39", "40": "https://stin.hr/portfolio-items/cd-31-40/#cd40", "41": "https://stin.hr/portfolio-items/cd-41-50/#cd41", "42": "https://stin.hr/portfolio-items/cd-41-50/#cd42", "43": "https://stin.hr/portfolio-items/cd-41-50/#cd43", "44": "https://stin.hr/portfolio-items/cd-41-50/#cd44", "45": "https://stin.hr/portfolio-items/cd-41-50/#cd45", "46": "https://stin.hr/portfolio-items/cd-41-50/#cd46", "47": "https://stin.hr/portfolio-items/cd-41-50/#cd47", "48": "https://stin.hr/portfolio-items/cd-41-50/#cd48", "49": "https://stin.hr/portfolio-items/cd-41-50/#cd49", "50": "https://stin.hr/portfolio-items/cd-41-50/#cd50", "51": "https://stin.hr/portfolio-items/cd-51-60/#cd51", "52": "https://stin.hr/portfolio-items/cd-51-60/#cd52", "53": "https://stin.hr/portfolio-items/cd-51-60/#cd53", "54": "https://stin.hr/portfolio-items/cd-51-60/#cd54", "55": "https://stin.hr/portfolio-items/cd-51-60/#cd55", "56": "https://stin.hr/portfolio-items/cd-51-60/#cd56", "57": "https://stin.hr/portfolio-items/cd-51-60/#cd57", "58": "https://stin.hr/portfolio-items/cd-51-60/#cd58", "59": "https://stin.hr/portfolio-items/cd-51-60/#cd59", "60": "https://stin.hr/portfolio-items/cd-51-60/#cd60", "61": "https://stin.hr/portfolio-items/cd-61-70/#cd61", "62": "https://stin.hr/portfolio-items/cd-61-70/#cd62", "63": "https://stin.hr/portfolio-items/cd-61-70/#cd63", "64": "https://stin.hr/portfolio-items/cd-61-70/#cd64", "65": "https://stin.hr/portfolio-items/cd-61-70/#cd65", "66": "https://stin.hr/portfolio-items/cd-61-70/#cd66", "67": "https://stin.hr/portfolio-items/cd-61-70/#cd67", "68": "https://stin.hr/portfolio-items/cd-61-70/#cd68", "69": "https://stin.hr/portfolio-items/cd-61-70/#cd69", "70": "https://stin.hr/portfolio-items/cd-61-70/#cd70", "71": "https://stin.hr/portfolio-items/cd-71-80/#cd71", "72": "https://stin.hr/portfolio-items/cd-71-80/#cd72", "73": "https://stin.hr/portfolio-items/cd-71-80/#cd73", "74": "https://stin.hr/portfolio-items/cd-71-80/#cd74", "75": "https://stin.hr/portfolio-items/cd-71-80/#cd75", "76": "https://stin.hr/portfolio-items/cd-71-80/#cd76", "77": "https://stin.hr/portfolio-items/cd-71-80/#cd77", "78": "https://stin.hr/portfolio-items/cd-71-80/#cd78", "79": "https://stin.hr/portfolio-items/cd-71-80/#cd79", "80": "https://stin.hr/portfolio-items/cd-71-80/#cd80", "81": "https://stin.hr/portfolio-items/cd-81-90/#cd81", "82": "https://stin.hr/portfolio-items/cd-81-90/#cd82", "83": "https://stin.hr/portfolio-items/cd-81-90/#cd83", "84": "https://stin.hr/portfolio-items/cd-81-90/#cd84", "85": "https://stin.hr/portfolio-items/cd-81-90/#cd85", "86": "https://stin.hr/portfolio-items/cd-81-90/#cd86", "87": "https://stin.hr/portfolio-items/cd-81-90/#cd87", "88": "https://stin.hr/portfolio-items/cd-81-90/#cd88", "89": "https://stin.hr/portfolio-items/cd-81-90/#cd89", "90": "https://stin.hr/portfolio-items/cd-81-90/#cd90", "91": "https://stin.hr/portfolio-items/cd-91-100/#cd91", "92": "https://stin.hr/portfolio-items/cd-91-100/#cd92", "93": "https://stin.hr/portfolio-items/cd-91-100/#cd93", "94": "https://stin.hr/portfolio-items/cd-91-100/#cd94", "95": "https://stin.hr/portfolio-items/cd-91-100/#cd95", "96": "https://stin.hr/portfolio-items/cd-91-100/#cd96", "97": "https://stin.hr/portfolio-items/cd-91-100/#cd97", "98": "https://stin.hr/portfolio-items/cd-91-100/#cd98", "99": "https://stin.hr/portfolio-items/cd-91-100/#cd99", "100": "https://stin.hr/portfolio-items/cd-91-100/#cd100", "101": "https://stin.hr/portfolio-items/cd-101-110/#cd101", "102": "https://stin.hr/portfolio-items/cd-101-110/#cd102", "103": "https://stin.hr/portfolio-items/cd-101-110/#cd103", "104": "https://stin.hr/portfolio-items/cd-101-110/#cd104", "105": "https://stin.hr/portfolio-items/cd-101-110/#cd105", "106": "https://stin.hr/portfolio-items/cd-101-110/#cd106", "107": "https://stin.hr/portfolio-items/cd-101-110/#cd107", "108": "https://stin.hr/portfolio-items/cd-101-110/#cd108", "109": "https://stin.hr/portfolio-items/cd-101-110/#cd109", "110": "https://stin.hr/portfolio-items/cd-101-110/#cd110", "111": "https://stin.hr/portfolio-items/cd-111-120/#cd111", "112": "https://stin.hr/portfolio-items/cd-111-120/#cd112", "113": "https://stin.hr/portfolio-items/cd-111-120/#cd113", "114": "https://stin.hr/portfolio-items/cd-111-120/#cd114", "115": "https://stin.hr/portfolio-items/cd-111-120/#cd115", "116": "https://stin.hr/portfolio-items/cd-111-120/#cd116", "117": "https://stin.hr/portfolio-items/cd-111-120/#cd117", "118": "https://stin.hr/portfolio-items/cd-111-120/#cd118", "119": "https://stin.hr/portfolio-items/cd-111-120/#cd119", "120": "https://stin.hr/portfolio-items/cd-111-120/#cd120", "121": "https://stin.hr/portfolio-items/cd-121-130/#cd121", "122": "https://stin.hr/portfolio-items/cd-121-130/#cd122", "123": "https://stin.hr/portfolio-items/cd-121-130/#cd123", "124": "https://stin.hr/portfolio-items/cd-121-130/#cd124", "125": "https://stin.hr/portfolio-items/cd-121-130/#cd125", "126": "https://stin.hr/portfolio-items/cd-121-130/#cd126", "127": "https://stin.hr/portfolio-items/cd-121-130/#cd127", "128": "https://stin.hr/portfolio-items/cd-121-130/#cd128", "129": "https://stin.hr/portfolio-items/cd-121-130/#cd129", "130": "https://stin.hr/portfolio-items/cd-121-130/#cd130", "131": "https://stin.hr/portfolio-items/cd-131-140/#cd131", "132": "https://stin.hr/portfolio-items/cd-131-140/#cd132", "133": "https://stin.hr/portfolio-items/cd-131-140/#cd133", "134": "https://stin.hr/portfolio-items/cd-131-140/#cd134", "135": "https://stin.hr/portfolio-items/cd-131-140/#cd135", "136": "https://stin.hr/portfolio-items/cd-131-140/#cd136", "137": "https://stin.hr/portfolio-items/cd-131-140/#cd137", "138": "https://stin.hr/portfolio-items/cd-131-140/#cd138", "139": "https://stin.hr/portfolio-items/cd-131-140/#cd139", "140": "https://stin.hr/portfolio-items/cd-131-140/#cd140", "141": "https://stin.hr/portfolio-items/cd-141-152/#cd141", "142": "https://stin.hr/portfolio-items/cd-141-152/#cd142", "143": "https://stin.hr/portfolio-items/cd-141-152/#cd143", "144": "https://stin.hr/portfolio-items/cd-141-152/#cd144", "145": "https://stin.hr/portfolio-items/cd-141-152/#cd145", "146": "https://stin.hr/portfolio-items/cd-141-152/#cd146", "147": "https://stin.hr/portfolio-items/cd-141-152/#cd147", "148": "https://stin.hr/portfolio-items/cd-141-152/#cd148", "149": "https://stin.hr/portfolio-items/cd-141-152/#cd149", "150": "https://stin.hr/portfolio-items/cd-141-152/#cd150", "151": "https://stin.hr/portfolio-items/cd-141-152/#cd151", "152": "https://stin.hr/portfolio-items/cd-141-152/#cd152", "100A": "https://stin.hr/portfolio-items/cd-91-100/#cd100", "100B": "https://stin.hr/portfolio-items/cd-91-100/#cd100", "100C": "https://stin.hr/portfolio-items/cd-91-100/#cd100", "139A": "https://stin.hr/portfolio-items/cd-131-140/#cd139", "139B": "https://stin.hr/portfolio-items/cd-131-140/#cd139"};
+var knjiga1Urls = {"1": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/", "2": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/", "3": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-3/", "4": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"};
+var knjiga2Urls = {"1": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-1/", "2": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/", "3": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"};
+
+var popis2Urls = {
+  "brac": "https://stin.hr/portfolio-items/brac/",
+  "hvar": "https://stin.hr/portfolio-items/hvar/",
+  "solta": "https://stin.hr/portfolio-items/solta/",
+  "split": "https://stin.hr/portfolio-items/splitsko-podrucje/"
+};
+
+function getCDLink(cdNum, source) {
+  var url = null;
+  var cssClass = '';
+  var display = String(cdNum);
+
+  if (source === 'popis1') {
+    url = cdUrlMap[String(cdNum)];
+    cssClass = 'cd-link';
+  } else if (source === 'knjiga1') {
+    url = knjiga1Urls[String(cdNum)];
+    cssClass = 'cd-link knjiga';
+  } else if (source === 'knjiga2') {
+    url = knjiga2Urls[String(cdNum)];
+    cssClass = 'cd-link knjiga';
+  }
+
+  if (url) {
+    return '<a href="' + url + '" target="_blank" class="' + cssClass + '" title="Otvori audio snimke za CD ' + display + ' na STIN.hr">CD ' + display + '</a>';
+  }
+  return '<span class="cd-link" style="background:#eee;color:#999;cursor:default;">CD ' + display + '</span>';
+}
+
+function getPopis2Link(regionId) {
+  // Map region IDs to Popis2 page URLs
+  var pageMap = {
+    'Otok Brač': 'brac',
+    'Otok Hvar': 'hvar',
+    'Otok Šolta': 'solta',
+    'Šire splitsko područje': 'split',
+    'Kaštela': 'split',
+    'Split': 'split'
+  };
+  var pageKey = pageMap[regionId];
+  if (pageKey && popis2Urls[pageKey]) {
+    return '<a href="' + popis2Urls[pageKey] + '" target="_blank" class="cd-link popis2" title="Otvori audio snimke na STIN.hr">' + regionId + '</a>';
+  }
+  return null;
+}
+
+var map = L.map('map', { fullscreenControl: true }).setView([43.7, 16.0], 8);
+
+L.tileLayer('https://api.maptiler.com/maps/osm-standard/256/{z}/{x}/{y}@2x.jpg?key=bAORSPxBPfSEAdo1hN6H', {
+  attribution: '&copy; <a href="https://www.maptiler.com/">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  maxZoom: 19,
+  tileSize: 256,
+  zoomOffset: 0
+}).addTo(map);
+
+var activeSources = { popis1: true, popis2: true, knjiga1: true, knjiga2: true };
+var markers = {};
+var markerCluster = L.markerClusterGroup({
+  maxClusterRadius: 50,
+  spiderfyOnMaxZoom: true,
+  showCoverageOnHover: false,
+  zoomToBoundsOnClick: true
+});
+map.addLayer(markerCluster);
+
+var counties = new Set();
+locations.forEach(function(loc) { counties.add(loc.county); });
+var countySelect = document.getElementById('countyFilter');
+Array.from(counties).sort().forEach(function(c) {
+  var opt = document.createElement('option');
+  opt.value = c; opt.textContent = c;
+  countySelect.appendChild(opt);
+});
+
+function createIcon(color) {
+  return L.divIcon({
+    className: 'custom-marker',
+    html: '<div style="width:18px;height:18px;background:' + color + ';border:2px solid #fff;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.4);"></div>',
+    iconSize: [18, 18],
+    iconAnchor: [9, 9]
+  });
+}
+
+function buildPopup(loc) {
+  var html = '<div class="popup-content">';
+  html += '<h3>' + loc.name + '</h3>';
+  html += '<div class="region-line">' + loc.region + ' &middot; ' + loc.county + '</div>';
+
+  if (loc.sources) {
+    // Popis 1
+    if (loc.sources.popis1 && loc.sources.popis1.cds) {
+      html += '<div class="source-block">';
+      html += '<div class="source-label">Popis 1 – CD:</div>';
+      html += '<div class="cd-links">';
+      loc.sources.popis1.cds.forEach(function(cd) {
+        html += getCDLink(cd, 'popis1');
+      });
+      html += '</div>';
+      if (loc.sources.popis1.notes) {
+        html += '<div class="notes-text">' + loc.sources.popis1.notes + '</div>';
+      }
+      html += '</div>';
+    }
+
+    // Popis 2
+    if (loc.sources.popis2) {
+      html += '<div class="source-block">';
+      html += '<div class="source-label">Popis 2:</div>';
+      html += '<div class="cd-links">';
+      var link = getPopis2Link(loc.region);
+      if (link) {
+        html += link;
+      }
+      html += '<span class="cd-link" style="background:#e6f5e6;color:#2e7d32;cursor:default;">Br. ' + (loc.sources.popis2.broj || '?') + '</span>';
+      html += '</div>';
+      if (loc.sources.popis2.notes) {
+        html += '<div class="notes-text">' + loc.sources.popis2.notes + '</div>';
+      }
+      html += '</div>';
+    }
+
+    // Knjiga 1
+    if (loc.sources.knjiga1) {
+      html += '<div class="source-block">';
+      html += '<div class="source-label">Knjiga 1 – CD i napjevi:</div>';
+      html += '<div class="cd-links">';
+      if (loc.sources.knjiga1.cds) {
+        loc.sources.knjiga1.cds.forEach(function(cd) {
+          html += getCDLink(cd, 'knjiga1');
+        });
+      }
+      html += '</div>';
+      if (loc.sources.knjiga1.tracks) {
+        html += '<div class="notes-text">Napjevi: ' + loc.sources.knjiga1.tracks.join(', ') + '</div>';
+      }
+      if (loc.sources.knjiga1.notes) {
+        html += '<div class="notes-text">' + loc.sources.knjiga1.notes + '</div>';
+      }
+      html += '</div>';
+    }
+
+    // Knjiga 2
+    if (loc.sources.knjiga2) {
+      html += '<div class="source-block">';
+      html += '<div class="source-label">Knjiga 2 – CD i napjevi:</div>';
+      html += '<div class="cd-links">';
+      if (loc.sources.knjiga2.cds) {
+        loc.sources.knjiga2.cds.forEach(function(cd) {
+          html += getCDLink(cd, 'knjiga2');
+        });
+      }
+      html += '</div>';
+      if (loc.sources.knjiga2.tracks) {
+        html += '<div class="notes-text">Napjevi: ' + loc.sources.knjiga2.tracks.join(', ') + '</div>';
+      }
+      if (loc.sources.knjiga2.notes) {
+        html += '<div class="notes-text">' + loc.sources.knjiga2.notes + '</div>';
+      }
+      html += '</div>';
+    }
+  }
+
+  if (loc.lat && loc.lng) {
+    html += '<p style="margin-top:4px;font-size:10px;color:#aaa;">Koordinate: ' + loc.lat.toFixed(4) + ', ' + loc.lng.toFixed(4) + '</p>';
+  }
+  html += '</div>';
+  return html;
+}
+
+locations.forEach(function(loc) {
+  if (!loc.lat || !loc.lng) return;
+  var color = regionColors[loc.region] || '#999';
+  var marker = L.marker([loc.lat, loc.lng], { icon: createIcon(color) });
+  marker.bindPopup(buildPopup(loc));
+  marker._locationData = loc;
+  markers[loc.id] = marker;
+  markerCluster.addLayer(marker);
+});
+
+// Build legend
+var legendEl = document.getElementById('legendItems');
+var usedRegions = new Set();
+locations.forEach(function(loc) { if (loc.lat && loc.lng) usedRegions.add(loc.region); });
+Array.from(usedRegions).sort().forEach(function(r) {
+  var div = document.createElement('div');
+  div.className = 'legend-item';
+  div.innerHTML = '<span class="legend-color" style="background:' + (regionColors[r] || '#999') + '"></span>' + r;
+  legendEl.appendChild(div);
+});
+
+// Filter functions
+function toggleSource(source, btn) {
+  activeSources[source] = !activeSources[source];
+  btn.classList.toggle('active', activeSources[source]);
+  applyFilters();
+}
+
+function applyFilters() {
+  var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  var selectedRegions = Array.from(document.getElementById('regionFilter').selectedOptions).map(function(o) { return o.value; });
+  var selectedCounty = document.getElementById('countyFilter').value;
+
+  markerCluster.clearLayers();
+  var count = 0;
+
+  locations.forEach(function(loc) {
+    if (!loc.lat || !loc.lng) return;
+    if (!selectedRegions.includes(loc.region)) return;
+    if (selectedCounty && loc.county !== selectedCounty) return;
+
+    var hasSource = false;
+    if (loc.sources) {
+      if (activeSources.popis1 && loc.sources.popis1) hasSource = true;
+      if (activeSources.popis2 && loc.sources.popis2) hasSource = true;
+      if (activeSources.knjiga1 && loc.sources.knjiga1) hasSource = true;
+      if (activeSources.knjiga2 && loc.sources.knjiga2) hasSource = true;
+    }
+    if (!hasSource && (activeSources.popis1 || activeSources.popis2 || activeSources.knjiga1 || activeSources.knjiga2)) return;
+
+    if (searchTerm) {
+      var locName = loc.name.toLowerCase();
+      var locRegion = loc.region.toLowerCase();
+      if (!locName.includes(searchTerm) && !locRegion.includes(searchTerm)) return;
+    }
+
+    markerCluster.addLayer(markers[loc.id]);
+    count++;
+  });
+
+  document.getElementById('infoBar').textContent = 'Prikazano: ' + count + ' lokacija';
+  document.getElementById('regionCount').textContent = 'Odabrano: ' + selectedRegions.length + ' od ' + regionNames.length + ' regija';
+}
+
+function resetFilters() {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('countyFilter').value = '';
+  var regionSelect = document.getElementById('regionFilter');
+  for (var i = 0; i < regionSelect.options.length; i++) regionSelect.options[i].selected = true;
+
+  activeSources = { popis1: true, popis2: true, knjiga1: true, knjiga2: true };
+  document.querySelectorAll('.filter-tag').forEach(function(btn) { btn.classList.add('active'); });
+
+  applyFilters();
+}
+
+applyFilters();
+</script>
+
+</body>
+</html>

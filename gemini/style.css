@@ -1,0 +1,150 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#sidebar {
+    width: 350px;
+    background: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar-header h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.sidebar-header p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.filter-section {
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.filter-section h3 {
+    font-size: 1.1rem;
+    color: #334155;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #475569;
+}
+
+small {
+    display: block;
+    margin-top: 8px;
+    color: #64748b;
+}
+
+.stats {
+    padding: 20px;
+    background: #e2e8f0;
+    font-weight: bold;
+    color: #0f172a;
+    margin-top: auto;
+}
+
+#map {
+    flex: 1;
+    height: 100%;
+}
+
+/* Custom Popup styling */
+.custom-popup .leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.2);
+    min-width: 250px;
+}
+
+.popup-content h4 {
+    margin: 0 0 10px 0;
+    color: #1e293b;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 5px;
+}
+
+.popup-content p {
+    margin: 5px 0;
+    color: #475569;
+}
+
+.popup-content strong {
+    color: #0f172a;
+}
+
+.audio-links {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #cbd5e1;
+}
+
+.audio-links ul {
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.audio-links li {
+    margin-bottom: 5px;
+}
+
+.audio-links a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.audio-links a:hover {
+    background: #eff6ff;
+    text-decoration: underline;
+}

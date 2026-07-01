@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glagoljaško Pjevanje - Karta Lokacija</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <!-- Sidebar controls -->
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <h2>Glagoljaško Pjevanje</h2>
+                <p>Preglednik lokacija i napjeva</p>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Pretraživanje</h3>
+                <input type="text" id="searchInput" placeholder="Pronađi lokaciju ili napjev...">
+            </div>
+
+            <div class="filter-section">
+                <h3>Izvori (Knjige i Popisi)</h3>
+                <div id="sourcesFilter" class="checkbox-group">
+                    <!-- Checkboxes will be injected here by JS -->
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>CD Broj</h3>
+                <input type="text" id="cdInput" placeholder="Npr. 1, 14, 120...">
+                <small>Unesite broj CD-a za filtriranje lokacija.</small>
+            </div>
+
+            <div class="stats" id="statsDisplay">
+                Prikazano: <span id="countDisplay">0</span> lokacija
+            </div>
+        </aside>
+
+        <!-- Map Container -->
+        <main id="map"></main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- MarkerCluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>

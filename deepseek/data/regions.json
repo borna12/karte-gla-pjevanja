@@ -1,0 +1,183 @@
+{
+  "regions": [
+    {
+      "id": "krk",
+      "name": "Otok Krk",
+      "county": "Primorsko-goranska županija",
+      "subregions": ["Dubašnica"],
+      "locations": [
+        "omisalj", "malinska", "punat", "jurandvor", "baska-krk", "vrbnik",
+        "dobrinj", "baska-draga", "skrpcici", "sv-vid-krk", "bogovici",
+        "kras-krk", "rasopasno", "poljica-krk", "vrh-krk", "risika"
+      ]
+    },
+    {
+      "id": "rab",
+      "name": "Otok Rab",
+      "county": "Primorsko-goranska županija",
+      "locations": ["banjol", "lopar"]
+    },
+    {
+      "id": "pag",
+      "name": "Otok Pag",
+      "county": "Ličko-senjska / Zadarska županija",
+      "locations": ["novalja", "pag-grad"]
+    },
+    {
+      "id": "istra",
+      "name": "Istra",
+      "county": "Istarska županija",
+      "locations": ["lanisce", "pazin"]
+    },
+    {
+      "id": "hvar",
+      "name": "Otok Hvar",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": ["hvar-grad", "stari-grad", "brusje", "jelsa", "vrboska", "vrbanj", "vrisnik", "svirce", "pitve"]
+    },
+    {
+      "id": "brac",
+      "name": "Otok Brač",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": [
+        "pucisca", "gornji-humac", "donji-humac", "praznice", "dol-brac",
+        "postira", "splitska", "supetar", "selca", "novo-selo", "skrip",
+        "nerezisca", "bol", "sumartin"
+      ]
+    },
+    {
+      "id": "solta",
+      "name": "Otok Šolta",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": ["gornje-selo"]
+    },
+    {
+      "id": "korcula",
+      "name": "Otok Korčula",
+      "county": "Dubrovačko-neretvanska županija",
+      "locations": ["cara", "smokvica", "racisce", "crnovo"]
+    },
+    {
+      "id": "cres",
+      "name": "Otok Cres",
+      "county": "Primorsko-goranska županija",
+      "locations": ["orlec", "cres-ostalo"]
+    },
+    {
+      "id": "vis",
+      "name": "Otok Vis",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": ["komiza", "vis-grad"]
+    },
+    {
+      "id": "prvic",
+      "name": "Otok Prvić",
+      "county": "Šibensko-kninska županija",
+      "locations": ["luka-prvic", "sepurine"]
+    },
+    {
+      "id": "zadarski-otoci",
+      "name": "Zadarski otoci",
+      "county": "Zadarska županija",
+      "subregions": ["Ugljan"],
+      "locations": ["kukuljica", "sestrunj", "preko"]
+    },
+    {
+      "id": "kastela",
+      "name": "Kaštela",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": ["kastel-stafilic", "kastel-kambelovac", "kastel-stari", "kastel-sucurac", "kastel-novi", "kastel-luksic"]
+    },
+    {
+      "id": "split",
+      "name": "Split i šire splitsko područje",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": ["split", "veli-varos", "solin", "vranjic", "stobrec", "klis", "krilo-jesenice"]
+    },
+    {
+      "id": "makarsko-primorje",
+      "name": "Makarsko primorje",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": [
+        "baska-voda", "tucepi", "podgora", "veliko-brdo", "drivenik-makarska",
+        "zaostrog", "podaca", "brist", "makarska", "zivogosce", "bast",
+        "brela-donja", "igrane", "draznice"
+      ]
+    },
+    {
+      "id": "imotska-krajina",
+      "name": "Imotska krajina",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": [
+        "vinjani", "runovici", "zmijavci", "sredicna", "prolozac",
+        "zupa-biokovska", "zagvozd", "imotski", "poljica-imotska",
+        "podbablje", "lokvicici", "cista-velika", "rogoznica-lokva",
+        "katuni-krecevo", "ricice", "studenci"
+      ]
+    },
+    {
+      "id": "zagora",
+      "name": "Zagora (šira unutrašnjost Dalmacije)",
+      "county": "Splitsko-dalmatinska / Šibensko-kninska / Zadarska županija",
+      "locations": [
+        "lisane-ostrovicke", "stankovci", "prgomet", "vrgorac",
+        "mirlovic-zagora", "rupe", "cvrljevo", "banjevci", "radosic",
+        "miljevci", "promina"
+      ]
+    },
+    {
+      "id": "poljica",
+      "name": "Poljica",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": [
+        "gata", "tugare", "jesenice-sumpetar", "donje-sitno",
+        "blato-na-cetini", "slime", "zadvarje", "krstatice"
+      ]
+    },
+    {
+      "id": "neretva",
+      "name": "Neretvanska krajina",
+      "county": "Dubrovačko-neretvanska županija",
+      "locations": [
+        "komin", "bagalovic", "vid", "opuzen", "vidonje", "metkovic",
+        "slivno-ravno", "rogotin", "bijeli-vir", "desne", "borovci", "ploce"
+      ]
+    },
+    {
+      "id": "hercegovina",
+      "name": "Hercegovina",
+      "county": "Bosna i Hercegovina",
+      "locations": ["veljaci-grab-sinac", "trebizat", "capljina"]
+    },
+    {
+      "id": "zadarsko-podrucje",
+      "name": "Zadarsko područje",
+      "county": "Zadarska županija",
+      "locations": ["petrcane", "sukosan", "posedarje", "zadar", "pridraga"]
+    },
+    {
+      "id": "sibensko-podrucje",
+      "name": "Šibensko područje i obala",
+      "county": "Šibensko-kninska županija",
+      "locations": ["rogoznica", "primosten", "vodice"]
+    },
+    {
+      "id": "peljesac",
+      "name": "Pelješac",
+      "county": "Dubrovačko-neretvanska županija",
+      "locations": ["ston"]
+    },
+    {
+      "id": "primorje",
+      "name": "Hrvatsko primorje",
+      "county": "Primorsko-goranska županija",
+      "locations": ["novi-vinodolski"]
+    },
+    {
+      "id": "dalmatinska-zagora-ostalo",
+      "name": "Ostala dalmatinska mjesta",
+      "county": "Splitsko-dalmatinska županija",
+      "locations": ["duce-rogac", "podstrana", "srijane", "kostanje"]
+    }
+  ]
+}
