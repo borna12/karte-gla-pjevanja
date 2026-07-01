@@ -1,0 +1,5878 @@
+{
+  "type": "FeatureCollection",
+  "name": "Tradicijsko pučko crkveno (glagoljaško) pjevanje – mjesta snimanja",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.52,
+          43.045
+        ]
+      },
+      "properties": {
+        "id_mjesta": "bagalovic",
+        "naziv": "Bagalović",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 143",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd143"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 144",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd144"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.625,
+          43.965
+        ]
+      },
+      "properties": {
+        "id_mjesta": "banjevci",
+        "naziv": "Banjevci",
+        "otok_podrucje": "",
+        "regija": "Bukovica/Ravni kotari",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 2"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 1 (napjevi 27–31)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 24)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 35)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 26)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.772,
+          44.751
+        ]
+      },
+      "properties": {
+        "id_mjesta": "banjol",
+        "naziv": "Banjol",
+        "otok_podrucje": "Otok Rab",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 25",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd25"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 27",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd27"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.965,
+          43.366
+        ]
+      },
+      "properties": {
+        "id_mjesta": "bast",
+        "naziv": "Bast",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 129",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd129"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.754,
+          44.969
+        ]
+      },
+      "properties": {
+        "id_mjesta": "baska",
+        "naziv": "Baška",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 11",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd11"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 12",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd12"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 24",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd24"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 110",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd110"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.73,
+          45.003
+        ]
+      },
+      "properties": {
+        "id_mjesta": "baska-draga",
+        "naziv": "Baška Draga (Draga Bašćanska)",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "U izvoru 'Baška Draga'",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 20",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd20"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 100 C",
+            "meta": "snimio Mate Lešćan, 1972. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd100"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 115",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd115"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 116",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd116"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.951,
+          43.357
+        ]
+      },
+      "properties": {
+        "id_mjesta": "baska-voda",
+        "naziv": "Baška Voda",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 124",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd124"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.64,
+          43.0
+        ]
+      },
+      "properties": {
+        "id_mjesta": "bijeli-vir",
+        "naziv": "Bijeli Vir",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 149",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd149"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 150",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd150"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.773,
+          43.453
+        ]
+      },
+      "properties": {
+        "id_mjesta": "blato-na-cetini",
+        "naziv": "Blato na Cetini",
+        "otok_podrucje": "",
+        "regija": "Omiško zaleđe",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 136",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd136"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.525,
+          45.117
+        ]
+      },
+      "properties": {
+        "id_mjesta": "bogovici",
+        "naziv": "Bogovići (Dubašnica)",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 104",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd104"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 117",
+            "meta": "snimio Nikola Radić, 1960. (presnimio S. Stepanov, 1973.)",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd117"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 118",
+            "meta": "snimio Nikola Radić, 1960. (presnimio S. Stepanov, 1973.)",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd118"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.655,
+          43.262
+        ]
+      },
+      "properties": {
+        "id_mjesta": "bol",
+        "naziv": "Bol",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 11",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#bol"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.47,
+          43.12
+        ]
+      },
+      "properties": {
+        "id_mjesta": "borovci",
+        "naziv": "Borovci",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 151",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd151"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.93,
+          43.37
+        ]
+      },
+      "properties": {
+        "id_mjesta": "brela-donja",
+        "naziv": "Brela Donja",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 130",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd130"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.32,
+          43.1
+        ]
+      },
+      "properties": {
+        "id_mjesta": "brist",
+        "naziv": "Brist",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 5,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 36)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 08–09)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 22–23)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 127",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd127"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 128",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd128"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.495,
+          43.183
+        ]
+      },
+      "properties": {
+        "id_mjesta": "brusje",
+        "naziv": "Brusje",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "U izvoru i 'Brusja'",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 7,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 37",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd37"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 38",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd38"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 39",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd39"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 40",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd40"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 41",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd41"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 45",
+            "meta": "snimio dr. V. Žganec, 1961. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd45"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 46",
+            "meta": "snimio dr. V. Žganec, 1961. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd46"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.94,
+          43.486
+        ]
+      },
+      "properties": {
+        "id_mjesta": "cista-velika",
+        "naziv": "Cista Velika",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina (Cetinski kraj)",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 135",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd135"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.407,
+          44.961
+        ]
+      },
+      "properties": {
+        "id_mjesta": "cres-grad",
+        "naziv": "Cres",
+        "otok_podrucje": "Otok Cres",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "U izvoru samo 'Cres' — pretpostavljen grad Cres",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 140",
+            "meta": "snimio Jerko Bezić, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd140"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.51,
+          43.08
+        ]
+      },
+      "properties": {
+        "id_mjesta": "desne",
+        "naziv": "Desne",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 151",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd151"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6,
+          45.13
+        ]
+      },
+      "properties": {
+        "id_mjesta": "dobrinj",
+        "naziv": "Dobrinj",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 5,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 15",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd15"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 16",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd16"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 17",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd17"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 18",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd18"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 107",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd107"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.62,
+          43.355
+        ]
+      },
+      "properties": {
+        "id_mjesta": "dol-brac",
+        "naziv": "Dol",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 5",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#dol"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.585,
+          43.534
+        ]
+      },
+      "properties": {
+        "id_mjesta": "donje-sitno",
+        "naziv": "Donje Sitno",
+        "otok_podrucje": "",
+        "regija": "Poljica",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 137",
+            "meta": "snimio Stjepan Stepanov, 1960. (darovano fonoteci 1975.)",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd137"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.595,
+          43.33
+        ]
+      },
+      "properties": {
+        "id_mjesta": "donji-humac",
+        "naziv": "Donji Humac",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 3",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#donji-humac"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.117,
+          43.222
+        ]
+      },
+      "properties": {
+        "id_mjesta": "drasnice",
+        "naziv": "Drašnice",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 130",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd130"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.247,
+          43.155
+        ]
+      },
+      "properties": {
+        "id_mjesta": "drvenik-makarska",
+        "naziv": "Drvenik (Makarsko primorje)",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "U Knjizi 2 i CD 126 ('Drivenik') moguća dvosmislenost s otokom Drvenikom kod Trogira",
+        "izvori": [
+          "Knjiga 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 06–08)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 126",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd126"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.525,
+          45.115
+        ]
+      },
+      "properties": {
+        "id_mjesta": "dubasnica",
+        "naziv": "Dubašnica",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "Područje/župa, ne pojedinačno naselje",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 5",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd5"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 20",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd20"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.653,
+          43.437
+        ]
+      },
+      "properties": {
+        "id_mjesta": "duce-rogac",
+        "naziv": "Duće – Rogač",
+        "otok_podrucje": "Kod Omiša",
+        "regija": "Poljica",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 84",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd84"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.726,
+          43.448
+        ]
+      },
+      "properties": {
+        "id_mjesta": "gata",
+        "naziv": "Gata",
+        "otok_podrucje": "",
+        "regija": "Poljica",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 87",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd87"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.34,
+          43.37
+        ]
+      },
+      "properties": {
+        "id_mjesta": "gornje-selo-solta",
+        "naziv": "Gornje Selo",
+        "otok_podrucje": "Otok Šolta",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 7",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/solta/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.76,
+          43.31
+        ]
+      },
+      "properties": {
+        "id_mjesta": "gornji-humac",
+        "naziv": "Gornji Humac",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 2",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#gornji-humac"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.443,
+          43.172
+        ]
+      },
+      "properties": {
+        "id_mjesta": "hvar-grad",
+        "naziv": "Hvar (grad)",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 36",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd36"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 40",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd40"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 44",
+            "meta": "snimio dr. V. Žganec, 1961. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd44"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 45",
+            "meta": "snimio dr. V. Žganec, 1961. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd45"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.14,
+          43.205
+        ]
+      },
+      "properties": {
+        "id_mjesta": "igrane",
+        "naziv": "Igrane",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 1 (napjevi 01–12)",
+            "meta": "snimio Ivan Talijančić, 2005.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-1/"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 130",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd130"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.217,
+          43.446
+        ]
+      },
+      "properties": {
+        "id_mjesta": "imotski",
+        "naziv": "Imotski",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 133",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd133"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 134",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd134"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 135",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd135"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.692,
+          43.161
+        ]
+      },
+      "properties": {
+        "id_mjesta": "jelsa",
+        "naziv": "Jelsa",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 41",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd41"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 42",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd42"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 43",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd43"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 6",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/6-jelsa/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6,
+          43.45
+        ]
+      },
+      "properties": {
+        "id_mjesta": "jesenice-sumpetar",
+        "naziv": "Jesenice – Sumpetar",
+        "otok_podrucje": "",
+        "regija": "Poljica",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 5,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 91",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd91"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 92",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd92"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 93",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd93"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 94",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd94"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 95",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd95"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.745,
+          44.98
+        ]
+      },
+      "properties": {
+        "id_mjesta": "jurandvor",
+        "naziv": "Jurandvor",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 11",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd11"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 12",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd12"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 100 C",
+            "meta": "snimio Mate Lešćan, 1972. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd100"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 111",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd111"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.862,
+          43.456
+        ]
+      },
+      "properties": {
+        "id_mjesta": "katuni-kresevo",
+        "naziv": "Katuni – Kreševo",
+        "otok_podrucje": "",
+        "regija": "Omiško zaleđe (Šestanovac)",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 135",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd135"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 136",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd136"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.385,
+          43.549
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kastel-kambelovac",
+        "naziv": "Kaštel Kambelovac",
+        "otok_podrucje": "Kaštela",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 6,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 59",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd59"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 62",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd62"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 63",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd63"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 64",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd64"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 65",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd65"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 12",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#kastel-kambelovac"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.367,
+          43.553
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kastel-luksic",
+        "naziv": "Kaštel Lukšić",
+        "otok_podrucje": "Kaštela",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 62",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd62"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 64",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd64"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 11",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#kastel-luksic"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.341,
+          43.552
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kastel-novi",
+        "naziv": "Kaštel Novi",
+        "otok_podrucje": "Kaštela",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 9",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#kastel-novi"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.352,
+          43.551
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kastel-stari",
+        "naziv": "Kaštel Stari",
+        "otok_podrucje": "Kaštela",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 5,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 59",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd59"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 60",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd60"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 63",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd63"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 64",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd64"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 10",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#kastel-stari"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.43,
+          43.548
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kastel-sucurac",
+        "naziv": "Kaštel Sućurac",
+        "otok_podrucje": "Kaštela",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 60",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd60"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 61",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd61"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.331,
+          43.553
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kastel-stafilic",
+        "naziv": "Kaštel Štafilić",
+        "otok_podrucje": "Kaštela",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 5,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 56",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd56"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 57",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd57"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 58",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd58"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 59",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd59"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 8",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#kastel-stafilic"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.524,
+          43.557
+        ]
+      },
+      "properties": {
+        "id_mjesta": "klis",
+        "naziv": "Klis",
+        "otok_podrucje": "",
+        "regija": "Splitsko zaleđe",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 6",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#klis"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 14",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#klis"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.45,
+          43.052
+        ]
+      },
+      "properties": {
+        "id_mjesta": "komin",
+        "naziv": "Komin",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 143",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd143"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.089,
+          43.043
+        ]
+      },
+      "properties": {
+        "id_mjesta": "komiza",
+        "naziv": "Komiža",
+        "otok_podrucje": "Otok Vis",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 78",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd78"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 79",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd79"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.797,
+          43.469
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kostanje",
+        "naziv": "Kostanje",
+        "otok_podrucje": "",
+        "regija": "Poljica",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 96",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd96"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 97",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd97"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 98",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd98"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 99",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd99"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.28,
+          43.24
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kozica",
+        "naziv": "Kozica",
+        "otok_podrucje": "",
+        "regija": "Vrgorska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 132",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd132"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.61,
+          45.115
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kras",
+        "naziv": "Kras",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 105",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd105"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 106",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd106"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.598,
+          43.452
+        ]
+      },
+      "properties": {
+        "id_mjesta": "krilo-jesenice",
+        "naziv": "Krilo – Jesenice",
+        "otok_podrucje": "",
+        "regija": "Poljica",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 13",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#krilo-jesenice"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.105,
+          43.385
+        ]
+      },
+      "properties": {
+        "id_mjesta": "krstatice",
+        "naziv": "Krstatice",
+        "otok_podrucje": "",
+        "regija": "Zabiokovlje",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 136",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd136"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.252,
+          44.03
+        ]
+      },
+      "properties": {
+        "id_mjesta": "kukljica",
+        "naziv": "Kukljica",
+        "otok_podrucje": "Otok Ugljan",
+        "regija": "Zadarski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "U izvoru 'Kukuljica' — vjerojatno Kukljica",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 47",
+            "meta": "snimio dr. V. Žganec, 1963. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd47"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 48",
+            "meta": "snimio dr. V. Žganec, 1963. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd48"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.05,
+          45.355
+        ]
+      },
+      "properties": {
+        "id_mjesta": "lanisce",
+        "naziv": "Lanišće",
+        "otok_podrucje": "Ćićarija",
+        "regija": "Istra",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 32",
+            "meta": "snimio dr. V. Žganec, 1957.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd32"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 33",
+            "meta": "snimio dr. V. Žganec, 1957.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd33"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 34",
+            "meta": "snimio dr. V. Žganec, 1957.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd34"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 35",
+            "meta": "snimio dr. V. Žganec, 1957.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd35"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.728,
+          43.945
+        ]
+      },
+      "properties": {
+        "id_mjesta": "lisane-ostrovicke",
+        "naziv": "Lišane Ostrovičke",
+        "otok_podrucje": "",
+        "regija": "Ravni kotari",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 01–06)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 18)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 22–23)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 22)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.13,
+          43.42
+        ]
+      },
+      "properties": {
+        "id_mjesta": "lokvicici",
+        "naziv": "Lokvičići",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 135",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd135"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.731,
+          44.829
+        ]
+      },
+      "properties": {
+        "id_mjesta": "lopar",
+        "naziv": "Lopar",
+        "otok_podrucje": "Otok Rab",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 25",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd25"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 26",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd26"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.018,
+          43.297
+        ]
+      },
+      "properties": {
+        "id_mjesta": "makarska",
+        "naziv": "Makarska",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 128",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd128"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.53,
+          45.124
+        ]
+      },
+      "properties": {
+        "id_mjesta": "malinska",
+        "naziv": "Malinska",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 5",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd5"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.648,
+          43.054
+        ]
+      },
+      "properties": {
+        "id_mjesta": "metkovic",
+        "naziv": "Metković",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 1",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 10,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 14–16)",
+            "meta": "snimljeno travnja 2004.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 03)",
+            "meta": "snimljeno travnja 2004.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 07)",
+            "meta": "snimljeno travnja 2004.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 11)",
+            "meta": "snimljeno travnja 2004.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 3 (napjevi 04–05)",
+            "meta": "snimljeno travnja 2004.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 11)",
+            "meta": "snimljeno travnja 2004.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 14)",
+            "meta": "snimljeno travnja 2004.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 17)",
+            "meta": "snimljeno kolovoza 2004.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 147",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd147"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 148",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd148"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.97,
+          43.87
+        ]
+      },
+      "properties": {
+        "id_mjesta": "miljevci",
+        "naziv": "Miljevci",
+        "otok_podrucje": "Miljevačka visoravan",
+        "regija": "Šibenska zagora",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "Područje (više sela), ne jedno naselje",
+        "izvori": [
+          "Knjiga 2"
+        ],
+        "broj_zapisa": 6,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 22)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 43)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 45)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 10)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 25)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 30)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.085,
+          43.815
+        ]
+      },
+      "properties": {
+        "id_mjesta": "mirlovic-zagora",
+        "naziv": "Mirlović Zagora",
+        "otok_podrucje": "",
+        "regija": "Šibenska zagora",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 2"
+        ],
+        "broj_zapisa": 10,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 1 (napjevi 13–18)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 20–21)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 30)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 34)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 38)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 44)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 05)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 11)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 24)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 31–32)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.575,
+          43.33
+        ]
+      },
+      "properties": {
+        "id_mjesta": "nerezisca",
+        "naziv": "Nerežišća",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 10",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#nerezisca"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.886,
+          44.558
+        ]
+      },
+      "properties": {
+        "id_mjesta": "novalja",
+        "naziv": "Novalja",
+        "otok_podrucje": "Otok Pag",
+        "regija": "Sjeverna Dalmacija/Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 28",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd28"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 29",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd29"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 140",
+            "meta": "snimio Jerko Bezić, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd140"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.788,
+          45.128
+        ]
+      },
+      "properties": {
+        "id_mjesta": "novi-vinodolski",
+        "naziv": "Novi Vinodolski",
+        "otok_podrucje": "Vinodol",
+        "regija": "Primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 70",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd70"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 71",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd71"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 72",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd72"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 140",
+            "meta": "snimio Jerko Bezić, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd140"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.825,
+          43.305
+        ]
+      },
+      "properties": {
+        "id_mjesta": "novo-selo-brac",
+        "naziv": "Novo Selo",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 8",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#novo-selo"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.555,
+          45.211
+        ]
+      },
+      "properties": {
+        "id_mjesta": "omisalj",
+        "naziv": "Omišalj",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 13,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 1",
+            "meta": "snimio prof. dr. J. Hamm, 1954.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd1"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 2",
+            "meta": "snimio prof. dr. J. Hamm, 1954.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd2"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 3",
+            "meta": "snimio prof. dr. J. Hamm, 1954.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd3"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 4",
+            "meta": "snimio prof. dr. J. Hamm, 1954.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd4"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 5",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd5"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 6",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd6"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 7",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd7"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 8",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd8"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 19",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd19"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 54",
+            "meta": "snimio Mate Lešćan, 1964. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd54"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 55",
+            "meta": "snimio Mate Lešćan, 1964. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd55"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 119",
+            "meta": "snimio Nikola Radić, 1969. (presnimio S. Stepanov, 1973.)",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd119"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 120",
+            "meta": "snimio Nikola Radić, 1969. (presnimio S. Stepanov, 1973.)",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd120"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.566,
+          43.013
+        ]
+      },
+      "properties": {
+        "id_mjesta": "opuzen",
+        "naziv": "Opuzen",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 145",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd145"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 146",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd146"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.434,
+          44.886
+        ]
+      },
+      "properties": {
+        "id_mjesta": "orlec",
+        "naziv": "Orlec",
+        "otok_podrucje": "Otok Cres",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 74",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd74"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 75",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd75"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.6,
+          45.07
+        ]
+      },
+      "properties": {
+        "id_mjesta": "otok-krk",
+        "naziv": "Otok Krk (općenito)",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "CD-ovi označeni samo 'Krk' bez naselja; centroid otoka",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 138",
+            "meta": "snimio dr. V. Žganec, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd138"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 139 A",
+            "meta": "snimio dr. V. Žganec, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd139"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 139 B",
+            "meta": "snimio dr. V. Žganec, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd139"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.97,
+          44.5
+        ]
+      },
+      "properties": {
+        "id_mjesta": "otok-pag",
+        "naziv": "Otok Pag (općenito)",
+        "otok_podrucje": "Otok Pag",
+        "regija": "Sjeverna Dalmacija",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "CD označen samo 'Pag'; centroid otoka",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 138",
+            "meta": "snimio dr. V. Žganec, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd138"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.057,
+          44.443
+        ]
+      },
+      "properties": {
+        "id_mjesta": "pag-grad",
+        "naziv": "Pag (grad)",
+        "otok_podrucje": "Otok Pag",
+        "regija": "Sjeverna Dalmacija",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 67",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd67"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 68",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd68"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 69",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd69"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 70",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd70"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.937,
+          45.24
+        ]
+      },
+      "properties": {
+        "id_mjesta": "pazin",
+        "naziv": "Pazin",
+        "otok_podrucje": "",
+        "regija": "Istra",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 35",
+            "meta": "snimio dr. V. Žganec, 1957.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd35"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.165,
+          44.176
+        ]
+      },
+      "properties": {
+        "id_mjesta": "petrcane",
+        "naziv": "Petrčane",
+        "otok_podrucje": "",
+        "regija": "Zadarsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 73",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd73"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.687,
+          43.152
+        ]
+      },
+      "properties": {
+        "id_mjesta": "pitve",
+        "naziv": "Pitve",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 7",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/7-pitve/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.43,
+          43.054
+        ]
+      },
+      "properties": {
+        "id_mjesta": "ploce",
+        "naziv": "Ploče",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 152",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd152"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.305,
+          43.113
+        ]
+      },
+      "properties": {
+        "id_mjesta": "podaca",
+        "naziv": "Podaca",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 127",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd127"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.18,
+          43.411
+        ]
+      },
+      "properties": {
+        "id_mjesta": "podbablje",
+        "naziv": "Podbablje",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 135",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd135"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.075,
+          43.245
+        ]
+      },
+      "properties": {
+        "id_mjesta": "podgora",
+        "naziv": "Podgora",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 125",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd125"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.556,
+          43.488
+        ]
+      },
+      "properties": {
+        "id_mjesta": "podstrana",
+        "naziv": "Podstrana (Sv. Martin – Šćadine)",
+        "otok_podrucje": "",
+        "regija": "Splitsko područje/Poljica",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 85",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd85"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 86",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd86"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5,
+          45.075
+        ]
+      },
+      "properties": {
+        "id_mjesta": "poljica-krk",
+        "naziv": "Poljica (Krk)",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 108",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd108"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.16,
+          43.5
+        ]
+      },
+      "properties": {
+        "id_mjesta": "poljica-imotska",
+        "naziv": "Poljica Imotska",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 133",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd133"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.48,
+          44.213
+        ]
+      },
+      "properties": {
+        "id_mjesta": "posedarje",
+        "naziv": "Posedarje",
+        "otok_podrucje": "",
+        "regija": "Zadarsko zaleđe",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 141",
+            "meta": "snimio Josip Milić, 1975. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd141"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.63,
+          43.376
+        ]
+      },
+      "properties": {
+        "id_mjesta": "postira",
+        "naziv": "Postira",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 5b",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#postira"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.715,
+          43.32
+        ]
+      },
+      "properties": {
+        "id_mjesta": "praznice",
+        "naziv": "Pražnice",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 4",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.187,
+          44.082
+        ]
+      },
+      "properties": {
+        "id_mjesta": "preko",
+        "naziv": "Preko",
+        "otok_podrucje": "Otok Ugljan",
+        "regija": "Zadarski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 49",
+            "meta": "snimio dr. V. Žganec, 1963. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd49"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 50",
+            "meta": "snimio dr. V. Žganec, 1963. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd50"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.34,
+          43.62
+        ]
+      },
+      "properties": {
+        "id_mjesta": "prgomet",
+        "naziv": "Prgomet",
+        "otok_podrucje": "",
+        "regija": "Trogirska zagora",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 24)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 02)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.55,
+          44.13
+        ]
+      },
+      "properties": {
+        "id_mjesta": "pridraga",
+        "naziv": "Pridraga",
+        "otok_podrucje": "Novigradsko područje",
+        "regija": "Zadarsko zaleđe",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 66",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd66"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 67",
+            "meta": "snimio Jerko Bezić, XI. 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd67"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.926,
+          43.586
+        ]
+      },
+      "properties": {
+        "id_mjesta": "primosten",
+        "naziv": "Primošten",
+        "otok_podrucje": "",
+        "regija": "Šibensko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 77",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd77"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.165,
+          43.47
+        ]
+      },
+      "properties": {
+        "id_mjesta": "prolozac",
+        "naziv": "Proložac",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 131",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd131"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 132",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd132"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.13,
+          43.96
+        ]
+      },
+      "properties": {
+        "id_mjesta": "promina",
+        "naziv": "Promina (Oklaj)",
+        "otok_podrucje": "",
+        "regija": "Šibenska zagora",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "Općina Promina; pretpostavljeno središte Oklaj",
+        "izvori": [
+          "Knjiga 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 12)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.799,
+          43.726
+        ]
+      },
+      "properties": {
+        "id_mjesta": "prvic-luka",
+        "naziv": "Prvić Luka",
+        "otok_podrucje": "Otok Prvić",
+        "regija": "Šibensko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "U izvoru i 'Luka' i 'Prvić'",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 80",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd80"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 81",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd81"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.629,
+          45.013
+        ]
+      },
+      "properties": {
+        "id_mjesta": "punat",
+        "naziv": "Punat",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 9",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd9"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 10",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-1-10/#cd10"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 112",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd112"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 113",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd113"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.734,
+          43.347
+        ]
+      },
+      "properties": {
+        "id_mjesta": "pucisca",
+        "naziv": "Pučišća",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 1",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#pucisca"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.37,
+          43.6
+        ]
+      },
+      "properties": {
+        "id_mjesta": "radosic",
+        "naziv": "Radošić",
+        "otok_podrucje": "Kod Lećevice",
+        "regija": "Trogirska zagora",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "Pretpostavljen Radošić kod Lećevice",
+        "izvori": [
+          "Knjiga 2"
+        ],
+        "broj_zapisa": 5,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 01–05)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 25)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 33)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 42)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 28–29)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.58,
+          45.12
+        ]
+      },
+      "properties": {
+        "id_mjesta": "rasopasno",
+        "naziv": "Rasopasno",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 106",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd106"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.02,
+          42.974
+        ]
+      },
+      "properties": {
+        "id_mjesta": "racisce",
+        "naziv": "Račišće",
+        "otok_podrucje": "Otok Korčula",
+        "regija": "Južnodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 52",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd52"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 53",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd53"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.66,
+          45.095
+        ]
+      },
+      "properties": {
+        "id_mjesta": "risika",
+        "naziv": "Risika",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 114",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd114"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.09,
+          43.527
+        ]
+      },
+      "properties": {
+        "id_mjesta": "ricice",
+        "naziv": "Ričice",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 134",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd134"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.483,
+          43.043
+        ]
+      },
+      "properties": {
+        "id_mjesta": "rogotin",
+        "naziv": "Rogotin",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 148",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd148"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 149",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd149"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.965,
+          43.527
+        ]
+      },
+      "properties": {
+        "id_mjesta": "rogoznica",
+        "naziv": "Rogoznica",
+        "otok_podrucje": "",
+        "regija": "Šibensko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 76",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd76"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 77",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd77"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 78",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd78"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.776,
+          43.414
+        ]
+      },
+      "properties": {
+        "id_mjesta": "rogoznica-lokva",
+        "naziv": "Rogoznica – Lokva (Lokva Rogoznica)",
+        "otok_podrucje": "Kod Omiša",
+        "regija": "Omiško primorje",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "Identifikacija nesigurna; moguće i Rogoznica u Imotskoj krajini",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 135",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd135"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.225,
+          43.382
+        ]
+      },
+      "properties": {
+        "id_mjesta": "runovici",
+        "naziv": "Runovići",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "U izvorima i 'Runović' i 'iz Runovića'",
+        "izvori": [
+          "Knjiga 1",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 3 (napjevi 01)",
+            "meta": "snimljeno kolovoza 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-3/"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 131",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd131"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.94,
+          43.943
+        ]
+      },
+      "properties": {
+        "id_mjesta": "rupe",
+        "naziv": "Rupe",
+        "otok_podrucje": "Skradinsko zaleđe",
+        "regija": "Šibenska zagora",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 2"
+        ],
+        "broj_zapisa": 5,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 1 (napjevi 19–22)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 23)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 31)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 41)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 27)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.852,
+          43.298
+        ]
+      },
+      "properties": {
+        "id_mjesta": "selca",
+        "naziv": "Selca",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 7b",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#selca"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.01,
+          44.14
+        ]
+      },
+      "properties": {
+        "id_mjesta": "sestrunj",
+        "naziv": "Sestrunj",
+        "otok_podrucje": "Otok Sestrunj",
+        "regija": "Zadarski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 48",
+            "meta": "snimio dr. V. Žganec, 1963. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd48"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 49",
+            "meta": "snimio dr. V. Žganec, 1963. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd49"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 140",
+            "meta": "snimio Jerko Bezić, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd140"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.523,
+          45.055
+        ]
+      },
+      "properties": {
+        "id_mjesta": "skrpcici",
+        "naziv": "Skrpčići (župa Linardići)",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 101",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd101"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 102",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd102"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.755,
+          43.435
+        ]
+      },
+      "properties": {
+        "id_mjesta": "slime",
+        "naziv": "Slime",
+        "otok_podrucje": "",
+        "regija": "Omiško zaleđe",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 136",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd136"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.585,
+          42.985
+        ]
+      },
+      "properties": {
+        "id_mjesta": "slivno-ravno",
+        "naziv": "Slivno-Ravno",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 148",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd148"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.89,
+          42.929
+        ]
+      },
+      "properties": {
+        "id_mjesta": "smokvica",
+        "naziv": "Smokvica",
+        "otok_podrucje": "Otok Korčula",
+        "regija": "Južnodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 51",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd51"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 52",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd52"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.493,
+          43.539
+        ]
+      },
+      "properties": {
+        "id_mjesta": "solin",
+        "naziv": "Solin",
+        "otok_podrucje": "",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 2",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#solin"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.44,
+          43.509
+        ]
+      },
+      "properties": {
+        "id_mjesta": "split",
+        "naziv": "Split",
+        "otok_podrucje": "",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "Knjiga 1: Crkva sestara Službenica Milosrđa (Anćele)",
+        "izvori": [
+          "Knjiga 1"
+        ],
+        "broj_zapisa": 8,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 17)",
+            "meta": "snimljeno srpnja 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 21)",
+            "meta": "snimljeno srpnja 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 09)",
+            "meta": "snimljeno srpnja 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 3 (napjevi 06)",
+            "meta": "snimljeno srpnja 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 05–06)",
+            "meta": "snimljeno srpnja 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 10)",
+            "meta": "snimljeno srpnja 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 18–19)",
+            "meta": "snimljeno srpnja 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 20)",
+            "meta": "snimljeno srpnja 2009.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.602,
+          43.38
+        ]
+      },
+      "properties": {
+        "id_mjesta": "splitska",
+        "naziv": "Splitska",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 6",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#splitska"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.235,
+          43.39
+        ]
+      },
+      "properties": {
+        "id_mjesta": "sredisna",
+        "naziv": "Središna (Runovići)",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "Zaselak Runovića; identificiran prema popisu fonoteke (CD 131: 'Runović – Središna')",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 131",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd131"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.744,
+          43.557
+        ]
+      },
+      "properties": {
+        "id_mjesta": "srijane",
+        "naziv": "Srijane – Vela Njiva",
+        "otok_podrucje": "",
+        "regija": "Poljica (Zamosorje)",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 90",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd90"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.722,
+          43.918
+        ]
+      },
+      "properties": {
+        "id_mjesta": "stankovci",
+        "naziv": "Stankovci",
+        "otok_podrucje": "",
+        "regija": "Ravni kotari",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 1"
+        ],
+        "broj_zapisa": 6,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 07–13)",
+            "meta": "snimljeno kolovoza 2010.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 19–20)",
+            "meta": "snimljeno kolovoza 2010.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 1 (napjevi 25)",
+            "meta": "snimljeno kolovoza 2010.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 3 (napjevi 02)",
+            "meta": "snimljeno kolovoza 2010.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-3/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 07–09)",
+            "meta": "snimljeno kolovoza 2010.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 21)",
+            "meta": "snimljeno kolovoza 2010.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.595,
+          43.184
+        ]
+      },
+      "properties": {
+        "id_mjesta": "stari-grad-hvar",
+        "naziv": "Stari Grad",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "U Popisnom listu 1 piše 'Starigrad'",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 36",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd36"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 37",
+            "meta": "snimio dr. V. Žganec, 1959.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd37"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 1",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/1-stari-grad/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.527,
+          43.503
+        ]
+      },
+      "properties": {
+        "id_mjesta": "stobrec",
+        "naziv": "Stobreč",
+        "otok_podrucje": "",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 4b",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#stobrec"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.697,
+          42.837
+        ]
+      },
+      "properties": {
+        "id_mjesta": "ston",
+        "naziv": "Ston",
+        "otok_podrucje": "Pelješac",
+        "regija": "Južna Dalmacija",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 53",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd53"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.21,
+          43.53
+        ]
+      },
+      "properties": {
+        "id_mjesta": "studenci",
+        "naziv": "Studenci",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 134",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd134"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.31,
+          44.046
+        ]
+      },
+      "properties": {
+        "id_mjesta": "sukosan",
+        "naziv": "Sukošan",
+        "otok_podrucje": "",
+        "regija": "Zadarsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 140",
+            "meta": "snimio Jerko Bezić, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd140"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.873,
+          43.285
+        ]
+      },
+      "properties": {
+        "id_mjesta": "sumartin",
+        "naziv": "Sumartin",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 1"
+        ],
+        "broj_zapisa": 6,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 01)",
+            "meta": "ožujak 1996., snimio Lj. Stipišić Delmata",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 04–06)",
+            "meta": "ožujak 1996., snimio Lj. Stipišić Delmata",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 08)",
+            "meta": "ožujak 1996., snimio Lj. Stipišić Delmata",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 2 (napjevi 10)",
+            "meta": "ožujak 1996., snimio Lj. Stipišić Delmata",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-franjevacke-provincije-presvetog-otkupitelja-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 01–02)",
+            "meta": "ožujak 1996., snimio Lj. Stipišić Delmata",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 12)",
+            "meta": "ožujak 1996., snimio Lj. Stipišić Delmata",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.553,
+          43.385
+        ]
+      },
+      "properties": {
+        "id_mjesta": "supetar",
+        "naziv": "Supetar",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 7",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#supetar"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.565,
+          45.115
+        ]
+      },
+      "properties": {
+        "id_mjesta": "sv-vid",
+        "naziv": "Sveti Vid (Sv. Vid-Miholjice)",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "Pretpostavljeno Sv. Vid-Miholjice",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 103",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd103"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.65,
+          43.155
+        ]
+      },
+      "properties": {
+        "id_mjesta": "svirce",
+        "naziv": "Svirče",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 5",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/5-svirce/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.49,
+          43.225
+        ]
+      },
+      "properties": {
+        "id_mjesta": "trebizat",
+        "naziv": "Trebižat",
+        "otok_podrucje": "",
+        "regija": "Hercegovina (BiH)",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 151",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd151"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.251,
+          43.517
+        ]
+      },
+      "properties": {
+        "id_mjesta": "trogir",
+        "naziv": "Trogir",
+        "otok_podrucje": "",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 4,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 30",
+            "meta": "snimio dr. V. Žganec, 1957.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd30"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 31",
+            "meta": "snimio dr. V. Žganec, 1957.",
+            "url": "https://stin.hr/portfolio-items/cd-31-40/#cd31"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 4a",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#trogir"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 5",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#trogir"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.654,
+          43.48
+        ]
+      },
+      "properties": {
+        "id_mjesta": "tugare",
+        "naziv": "Tugare",
+        "otok_podrucje": "",
+        "regija": "Poljica",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 88",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd88"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 89",
+            "meta": "snimio Stjepan Stepanov, 1972.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd89"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.055,
+          43.27
+        ]
+      },
+      "properties": {
+        "id_mjesta": "tucepi",
+        "naziv": "Tučepi",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 124",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd124"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 125",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd125"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.434,
+          43.508
+        ]
+      },
+      "properties": {
+        "id_mjesta": "veli-varos",
+        "naziv": "Veli Varoš (Split)",
+        "otok_podrucje": "",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 1",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#veli-varos"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0,
+          43.31
+        ]
+      },
+      "properties": {
+        "id_mjesta": "veliko-brdo",
+        "naziv": "Veliko Brdo",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 125",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd125"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 126",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd126"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.42,
+          43.27
+        ]
+      },
+      "properties": {
+        "id_mjesta": "veljaci-grab-sinac",
+        "naziv": "Veljaci – Grab – Sinac",
+        "otok_podrucje": "Ljubuški kraj",
+        "regija": "Hercegovina (BiH)",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "Skupina sela, zajednička točka; potrebna provjera",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 150",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd150"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.62,
+          43.078
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vid",
+        "naziv": "Vid",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 144",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd144"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.67,
+          42.99
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vidonje",
+        "naziv": "Vidonje",
+        "otok_podrucje": "",
+        "regija": "Neretvanska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 146",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd146"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 147",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd147"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.26,
+          43.45
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vinjani",
+        "naziv": "Vinjani",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "Vinjani Donji/Gornji — nije precizirano",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 131",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd131"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.183,
+          43.061
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vis-grad",
+        "naziv": "Vis (grad)",
+        "otok_podrucje": "Otok Vis",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 79",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd79"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 80",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd80"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.783,
+          43.761
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vodice",
+        "naziv": "Vodice",
+        "otok_podrucje": "",
+        "regija": "Šibensko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 82",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd82"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 83",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd83"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.46,
+          43.531
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vranjic",
+        "naziv": "Vranjic",
+        "otok_podrucje": "",
+        "regija": "Splitsko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 61",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd61"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 62",
+            "meta": "snimio Stjepan Stepanov, 1964.",
+            "url": "https://stin.hr/portfolio-items/cd-61-70/#cd62"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 3",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/splitsko-podrucje/#vranjic"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.64,
+          43.171
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vrbanj",
+        "naziv": "Vrbanj",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 3",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/3-vrbanj/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.673,
+          45.078
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vrbnik",
+        "naziv": "Vrbnik",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 14,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 13",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd13"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 14",
+            "meta": "snimio dr. V. Žganec, 1955.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd14"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 20",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-11-20/#cd20"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 21",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd21"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 22",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd22"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 23",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd23"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 24",
+            "meta": "snimio dr. V. Žganec, 1956.",
+            "url": "https://stin.hr/portfolio-items/cd-21-30/#cd24"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 100 A",
+            "meta": "snimio Mate Lešćan, 1972. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd100"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 100 B",
+            "meta": "snimio Mate Lešćan, 1972. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd100"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 100 C",
+            "meta": "snimio Mate Lešćan, 1972. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-91-100/#cd100"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 120",
+            "meta": "snimio Nikola Radić, 1969. (presnimio S. Stepanov, 1973.)",
+            "url": "https://stin.hr/portfolio-items/cd-111-120/#cd120"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 121",
+            "meta": "snimio Ivan Kirinčić, 1960. (presnimio S. Stepanov, 1973.)",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd121"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 122",
+            "meta": "snimio Ivan Kirinčić, 1960. (presnimio S. Stepanov, 1973.)",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd122"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 123",
+            "meta": "snimio Ivan Kirinčić, 1960. (presnimio S. Stepanov, 1973.)",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd123"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.668,
+          43.179
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vrboska",
+        "naziv": "Vrboska",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 2",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/2-vrboska/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.375,
+          43.205
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vrgorac",
+        "naziv": "Vrgorac",
+        "otok_podrucje": "",
+        "regija": "Vrgorska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 1",
+          "Knjiga 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 5,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 13)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 15)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 1",
+            "oznaka": "CD 4 (napjevi 16)",
+            "meta": "snimljeno kolovoza 2008.",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-cd-4/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 3 (napjevi 07)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-3/"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 132",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd132"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.555,
+          45.045
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vrh",
+        "naziv": "Vrh",
+        "otok_podrucje": "Otok Krk",
+        "regija": "Kvarner",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 109",
+            "meta": "snimio Stjepan Stepanov, 1973.",
+            "url": "https://stin.hr/portfolio-items/cd-101-110/#cd109"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.66,
+          43.149
+        ]
+      },
+      "properties": {
+        "id_mjesta": "vrisnik",
+        "naziv": "Vrisnik",
+        "otok_podrucje": "Otok Hvar",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2",
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 47",
+            "meta": "snimio dr. V. Žganec, 1963. (presnimio S. Stepanov, 1976.)",
+            "url": "https://stin.hr/portfolio-items/cd-41-50/#cd47"
+          },
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 4",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/4-vrisnik/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.879,
+          43.428
+        ]
+      },
+      "properties": {
+        "id_mjesta": "zadvarje",
+        "naziv": "Zadvarje",
+        "otok_podrucje": "",
+        "regija": "Omiško zaleđe",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 136",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd136"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.055,
+          43.395
+        ]
+      },
+      "properties": {
+        "id_mjesta": "zagvozd",
+        "naziv": "Zagvozd",
+        "otok_podrucje": "",
+        "regija": "Zabiokovlje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 133",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd133"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.28,
+          43.13
+        ]
+      },
+      "properties": {
+        "id_mjesta": "zaostrog",
+        "naziv": "Zaostrog",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 126",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd126"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 127",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd127"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.205,
+          43.413
+        ]
+      },
+      "properties": {
+        "id_mjesta": "zmijavci",
+        "naziv": "Zmijavci",
+        "otok_podrucje": "",
+        "regija": "Imotska krajina",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 131",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd131"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.7,
+          43.11
+        ]
+      },
+      "properties": {
+        "id_mjesta": "capljina",
+        "naziv": "Čapljina",
+        "otok_podrucje": "",
+        "regija": "Hercegovina (BiH)",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 152",
+            "meta": "snimio Stjepan Stepanov, 1976.",
+            "url": "https://stin.hr/portfolio-items/cd-141-152/#cd152"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.943,
+          42.913
+        ]
+      },
+      "properties": {
+        "id_mjesta": "cara",
+        "naziv": "Čara",
+        "otok_podrucje": "Otok Korčula",
+        "regija": "Južnodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 51",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd51"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 52",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd52"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 53",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd53"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.21,
+          43.74
+        ]
+      },
+      "properties": {
+        "id_mjesta": "cvrljevo",
+        "naziv": "Čvrljevo",
+        "otok_podrucje": "",
+        "regija": "Šibenska zagora",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Knjiga 2"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 1 (napjevi 23–26)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-1/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 32)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          },
+          {
+            "izvor": "Knjiga 2",
+            "oznaka": "CD 2 (napjevi 39)",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/tradicijsko-pucko-crkveno-pjevanje-u-franjevackoj-provinciji-presvetog-otkupitelja-knjiga-2-cd-2/"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.787,
+          43.735
+        ]
+      },
+      "properties": {
+        "id_mjesta": "sepurine",
+        "naziv": "Šepurine",
+        "otok_podrucje": "Otok Prvić",
+        "regija": "Šibensko područje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 3,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 80",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-71-80/#cd80"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 81",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd81"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 82",
+            "meta": "snimio Stjepan Stepanov, 1965.",
+            "url": "https://stin.hr/portfolio-items/cd-81-90/#cd82"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.605,
+          43.367
+        ]
+      },
+      "properties": {
+        "id_mjesta": "skrip",
+        "naziv": "Škrip",
+        "otok_podrucje": "Otok Brač",
+        "regija": "Srednjodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popis 2"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popis 2",
+            "oznaka": "red. br. 9",
+            "meta": "",
+            "url": "https://stin.hr/portfolio-items/brac/#skrip"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.19,
+          43.188
+        ]
+      },
+      "properties": {
+        "id_mjesta": "zivogosce",
+        "naziv": "Živogošće",
+        "otok_podrucje": "",
+        "regija": "Makarsko primorje",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 129",
+            "meta": "snimio Stjepan Stepanov, 1974.",
+            "url": "https://stin.hr/portfolio-items/cd-121-130/#cd129"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.11,
+          42.953
+        ]
+      },
+      "properties": {
+        "id_mjesta": "zrnovo",
+        "naziv": "Žrnovo",
+        "otok_podrucje": "Otok Korčula",
+        "regija": "Južnodalmatinski otoci",
+        "tocnost_koordinata": "priblizno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 1,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 53",
+            "meta": "snimio Stjepan Stepanov, 1963.",
+            "url": "https://stin.hr/portfolio-items/cd-51-60/#cd53"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.115,
+          43.355
+        ]
+      },
+      "properties": {
+        "id_mjesta": "zupa-biokovska",
+        "naziv": "Župa Biokovska",
+        "otok_podrucje": "",
+        "regija": "Zabiokovlje",
+        "tocnost_koordinata": "neprovjereno",
+        "napomena": "",
+        "izvori": [
+          "Popisni list 1"
+        ],
+        "broj_zapisa": 2,
+        "zapisi": [
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 132",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd132"
+          },
+          {
+            "izvor": "Popisni list 1",
+            "oznaka": "CD 133",
+            "meta": "snimio Stjepan Stepanov, 1975.",
+            "url": "https://stin.hr/portfolio-items/cd-131-140/#cd133"
+          }
+        ]
+      }
+    }
+  ]
+}

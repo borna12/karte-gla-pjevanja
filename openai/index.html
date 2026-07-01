@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Karta glagoljaškog pjevanja</title>
+    <meta name="description" content="Interaktivna Leaflet karta mjesta povezanih s glagoljaškim pjevanjem.">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <header class="sidebar-header">
+          <p class="eyebrow">Interaktivna karta</p>
+          <h1>Glagoljaško pjevanje</h1>
+          <p class="summary" id="summary">Učitavanje podataka...</p>
+        </header>
+
+        <section class="panel-section">
+          <label class="field-label" for="searchInput">Pretraga</label>
+          <input id="searchInput" class="text-input" type="search" placeholder="Mjesto, izvor, CD...">
+        </section>
+
+        <section class="panel-section two-cols">
+          <label class="check-card">
+            <input id="onlyGeocoded" type="checkbox" checked>
+            <span>Samo s koordinatama</span>
+          </label>
+          <label class="check-card">
+            <input id="onlyIssues" type="checkbox">
+            <span>Samo za provjeru</span>
+          </label>
+        </section>
+
+        <section class="panel-section">
+          <label class="field-label" for="contextFilter">Prostorni kontekst</label>
+          <select id="contextFilter" class="select-input">
+            <option value="">Svi konteksti</option>
+          </select>
+        </section>
+
+        <section class="panel-section">
+          <div class="section-title">Izvori</div>
+          <div id="sourceFilters" class="filter-list"></div>
+        </section>
+
+        <section class="panel-section list-section">
+          <div class="list-header">
+            <div>
+              <div class="section-title">Mjesta</div>
+              <small id="listCount"></small>
+            </div>
+            <button id="fitButton" class="small-button" type="button">Prikaži sve</button>
+          </div>
+          <div id="placeList" class="place-list"></div>
+        </section>
+      </aside>
+
+      <section class="map-wrap">
+        <button id="sidebarToggle" class="sidebar-toggle" type="button" aria-label="Prikaži ili sakrij filtere">Filteri</button>
+        <div id="map"></div>
+        <div id="emptyState" class="empty-state" hidden>
+          <strong>Nema vidljivih točaka.</strong>
+          <span>U `mjesta.csv` dodaj `lat` i `lon`, pa ponovno pokreni `python tools\build_leaflet_data.py`.</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
