@@ -1,6 +1,6 @@
 ﻿document.addEventListener('DOMContentLoaded', async () => {
     // 1. Initialize Map
-    const map = L.map('map').setView([43.5081, 16.4401], 8); 
+    const map = L.map('map').setView([43.8, 16.0], 8); // Centered on Dalmatia
     
     // Add Base Layers
     const osmBase = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -19,12 +19,12 @@
     // Initialize MarkerCluster
     const markers = L.markerClusterGroup({
         chunkedLoading: true,
-        spiderfyOnMaxZoom: true
+        spiderfyOnMaxZoom: true,
+        maxClusterRadius: 30 // Smaller radius so distinct towns are clickable
     });
     
     let allData = [];
 
-    // Utility to get audio links based on Source and CD
     function getAudioLinks(sources, cds) {
         if (!cds) return [];
         const links = [];
@@ -87,39 +87,15 @@
         return links;
     }
 
-    // Seeded random for consistent fake coordinates
-    function seededRandom(str) {
-        let h = 1779033703 ^ str.length;
-        for(let i = 0; i < str.length; i++) {
-            h = Math.imul(h ^ str.charCodeAt(i), 3432918353);
-            h = h << 13 | h >>> 19;
-        }
-        return function() {
-            h = Math.imul(h ^ (h >>> 16), 2246822507);
-            h = Math.imul(h ^ (h >>> 13), 3266489909);
-            return (h ^= h >>> 16) >>> 0;
-        }
-    }
-
     try {
         const response = await fetch('glagoljasko_pjevanje_lokacije.json');
         allData = await response.json();
     } catch (error) {
         console.error("Ne mogu učitati podatke:", error);
-        alert("Greška pri učitavanju podataka. Provjerite konzolu.");
+        alert("Greška pri učitavanju podataka.");
         return;
     }
 
-    // Assign temporary coordinates if missing
-    allData.forEach(item => {
-        if (!item.lat || !item.lng) {
-            const rand = seededRandom(item.Name);
-            item.lat = 43.0 + (rand() / 4294967296) * 1.5;
-            item.lng = 15.5 + (rand() / 4294967296) * 2.5;
-        }
-    });
-
-    // Populate Filters
     const uniqueSources = new Set();
     allData.forEach(d => {
         d.Sources.split(',').forEach(s => uniqueSources.add(s.trim()));
@@ -173,32 +149,40 @@
             }
             if (!cdMatch) return;
 
-            count++;
-            const marker = L.marker([item.lat, item.lng]);
-            
-            // Generate Links HTML
-            const audioLinks = getAudioLinks(item.Sources, item.CDs);
-            let linksHtml = '';
-            if (audioLinks.length > 0) {
-                linksHtml = `<div class="audio-links">
-                    <strong>Audiozapisi u repozitoriju:</strong>
-                    <ul>
-                        ${audioLinks.map(link => `<li><a href="${link.url}" target="_blank" rel="noopener noreferrer">🎵 ${link.text}</a></li>`).join('')}
-                    </ul>
-                </div>`;
-            }
+            // Only add if we have valid coordinates
+            if (item.lat && item.lng) {
+                count++;
+                
+                // Add a small jitter (e.g. 0.0001 degrees) if you have exact same coords for different items,
+                // although MarkerCluster handles overlap with spiderfy.
+                const lat = item.lat + (Math.random() - 0.5) * 0.0005;
+                const lng = item.lng + (Math.random() - 0.5) * 0.0005;
 
-            let popupHtml = `<div class="popup-content">
-                <h4>${item.Name}</h4>
-                <p><strong>Pojavljivanja:</strong> ${item.Occurrences}</p>
-                <p><strong>Izvori:</strong> ${item.Sources.replace(/_/g, ' ')}</p>
-                ${item.CDs ? `<p><strong>CD brojevi:</strong> ${item.CDs}</p>` : ''}
-                ${item.Notes ? `<p><strong>Napomene:</strong><br/>${item.Notes}</p>` : ''}
-                ${linksHtml}
-            </div>`;
-            
-            marker.bindPopup(popupHtml, { className: 'custom-popup' });
-            markers.addLayer(marker);
+                const marker = L.marker([lat, lng]);
+                
+                const audioLinks = getAudioLinks(item.Sources, item.CDs);
+                let linksHtml = '';
+                if (audioLinks.length > 0) {
+                    linksHtml = `<div class="audio-links">
+                        <strong>Audiozapisi u repozitoriju:</strong>
+                        <ul>
+                            ${audioLinks.map(link => `<li><a href="${link.url}" target="_blank" rel="noopener noreferrer">🎵 ${link.text}</a></li>`).join('')}
+                        </ul>
+                    </div>`;
+                }
+
+                let popupHtml = `<div class="popup-content">
+                    <h4>${item.Name}</h4>
+                    <p><strong>Pojavljivanja:</strong> ${item.Occurrences}</p>
+                    <p><strong>Izvori:</strong> ${item.Sources.replace(/_/g, ' ')}</p>
+                    ${item.CDs ? `<p><strong>CD brojevi:</strong> ${item.CDs}</p>` : ''}
+                    ${item.Notes ? `<p><strong>Napomene:</strong><br/>${item.Notes}</p>` : ''}
+                    ${linksHtml}
+                </div>`;
+                
+                marker.bindPopup(popupHtml, { className: 'custom-popup' });
+                markers.addLayer(marker);
+            }
         });
 
         map.addLayer(markers);
